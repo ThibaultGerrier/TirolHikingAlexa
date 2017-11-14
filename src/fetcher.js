@@ -13,7 +13,7 @@ class Fetcher {
         this.getGSHikingType(() => {
             this.getSemantifyJsonLd(() => {
                 console.log("Got " + apiKey + " data");
-                if(typeof cb === "function")
+                if (typeof cb === "function")
                     cb();
             });
         });
@@ -36,7 +36,7 @@ class Fetcher {
             this.getJson(semantifyUrl + "/api/annotation/cid/GS-" + id + "-en", (json) => {
                 that.annotations.push(json);
                 asyncCounter--;
-                if(asyncCounter === 0){
+                if (asyncCounter === 0) {
                     cb();
                 }
             });

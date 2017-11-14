@@ -6,14 +6,14 @@
 //https://1a087932.ngrok.io/webhook
 const app = require('jovo-framework').Jovo;
 const webhook = require('jovo-framework').Webhook;
-const Fetcher = require("./getData");
+const Fetcher = require("./src/fetcher");
 
 // Listen for post requests
-webhook.listen(8008, function() {
+webhook.listen(8008, function () {
     console.log('Local development server listening on port 8008...');
 });
 
-webhook.post('/webhook', function(req, res) {
+webhook.post('/webhook', function (req, res) {
     app.handleRequest(req, res, handlers);
     app.execute();
 });
@@ -31,20 +31,20 @@ const randNumber = max => Math.floor(Math.random() * max);
 
 const handlers = {
 
-    'LAUNCH': function() {
+    'LAUNCH': function () {
         app.toIntent('Launch');
     },
 
-    'WelcomeIntent': function() {
+    'WelcomeIntent': function () {
         app.tell('Welcome');
     },
 
-    'RandomHikingIntent': function() {
+    'RandomHikingIntent': function () {
         const randName = seefeldData.annotations[randNumber(seefeldData.annotations.length)]["name"];
         app.tell('Your random hiking route is: ' + randName);
     },
 
-    'HelloWorldIntent': function() {
+    'HelloWorldIntent': function () {
         app.tell('Hello World Intent!');
     },
 };
