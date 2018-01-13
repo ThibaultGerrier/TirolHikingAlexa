@@ -14,6 +14,22 @@
         "samples": []
       },
       {
+        "name": "ContactIntent",
+        "samples": [
+          "Wie kann ich die inhaber kontaktieren",
+          "gibt es eine telefonnummer"
+        ],
+        "slots": []
+      },
+      {
+        "name": "DifficultyIntent",
+        "samples": [
+          "Wie schwer ist diese route",
+          "wie schwierig ist dieser wanderweg"
+        ],
+        "slots": []
+      },
+      {
         "name": "HelpIntent",
         "samples": [
           "Was kann ich machen",
@@ -25,10 +41,39 @@
         "slots": []
       },
       {
+        "name": "ImageIntent",
+        "samples": [
+          "Hast du bilder für diese route",
+          "hast du bilder für diesen wanderweg",
+          "kannst du mir bilder sendem",
+          "kannst du mir photos geben"
+        ],
+        "slots": []
+      },
+      {
+        "name": "LengthIntent",
+        "samples": [
+          "Wie lang ist dieser Wanderweg",
+          "Wie lang ist diese route",
+          "wie lange ist dieser weg",
+          "wie lang ist diese wanderroute"
+        ],
+        "slots": []
+      },
+      {
         "name": "RandomHikingIntent",
         "samples": [
           "Gib mir eine zufällige wanderroute",
           "Gib mir einen zufälligen wanderweg"
+        ],
+        "slots": []
+      },
+      {
+        "name": "TimeIntent",
+        "samples": [
+          "Wie lange dauert diese route",
+          "wie viel zeit braucht dieser wanderweg",
+          "wie lange braucht man für diese route"
         ],
         "slots": []
       },
