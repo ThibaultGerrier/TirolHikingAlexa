@@ -1,4 +1,4 @@
-{
+﻿{
   "languageModel": {
     "intents": [
       {
@@ -7,6 +7,54 @@
       },
       {
         "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.MoreIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NavigateSettingsIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NextIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageUpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PauseIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PreviousIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ResumeIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollLeftIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollRightIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollUpIntent",
         "samples": []
       },
       {
@@ -30,6 +78,20 @@
         "slots": []
       },
       {
+        "name": "DifficultySearchIntent",
+        "samples": [
+          "Finde eine Wanderung die {Duration} lang geht",
+          "Gib mir eine Wanderung die {Duration}  dauert.",
+          "Suche einen Wanderweg der {Duration} dauert."
+        ],
+        "slots": [
+          {
+            "name": "Duration",
+            "type": "AMAZON.DURATION"
+          }
+        ]
+      },
+      {
         "name": "HelpIntent",
         "samples": [
           "Was kann ich machen",
@@ -45,7 +107,7 @@
         "samples": [
           "Hast du bilder für diese route",
           "hast du bilder für diesen wanderweg",
-          "kannst du mir bilder sendem",
+          "kannst du mir bilder senden",
           "kannst du mir photos geben"
         ],
         "slots": []
@@ -61,10 +123,54 @@
         "slots": []
       },
       {
+        "name": "MapIntent",
+        "samples": [
+          "Zeige mir die Karte",
+          "Sende mir die Karte an mein Handy",
+          "Schicke mir die Karte an meine App"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NearIntent",
+        "samples": [
+          "Was ist die näheste Wanderroute",
+          "Was ist die näheste Route",
+          "Was ist der näheste Wanderweg"
+        ],
+        "slots": []
+      },
+      {
         "name": "RandomHikingIntent",
         "samples": [
           "Gib mir eine zufällige wanderroute",
           "Gib mir einen zufälligen wanderweg"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NeartoIntent",
+        "samples": [
+          "Suche Wanderwege in {name}",
+          "Suche nach einem Wanderweg bei {name}",
+          "Suche nach einer Wanderung in  der nähe von {name}"
+        ],
+        "slots": [
+          {
+            "name": "name",
+            "type": "AMAZON.AT_CITY"
+          }
+        ]
+      },
+      {
+        "name": "SendInformationIntent",
+        "samples": [
+          "Sende mir informationen zu dieser route auf mein handy",
+          "Sende mir informationen zu dieser route auf mein smartphone",
+          "Sende mir informationen zu dieser route an meine app",
+          "sende an meine app",
+          "sende an meine handy",
+          "sende an mein smartphone"
         ],
         "slots": []
       },

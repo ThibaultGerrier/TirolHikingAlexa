@@ -1,5 +1,5 @@
-const semantifyUrl = 'http://localhost:8081';
-// const semantifyUrl = 'http://semantify.it';
+//const semantifyUrl = 'http://localhost:8081';
+const semantifyUrl = 'http://semantify.it';
 const request = require('request');
 
 const getJson = (url, cb) => {
