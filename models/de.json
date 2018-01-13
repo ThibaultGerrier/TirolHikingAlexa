@@ -1,0 +1,45 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "HelpIntent",
+        "samples": [
+          "Was kann ich machen",
+          "Hilf mir",
+          "Was sind meine optionen",
+          "Was soll ich sagen",
+          "Wie kann ich informationen bekommen"
+        ],
+        "slots": []
+      },
+      {
+        "name": "RandomHikingIntent",
+        "samples": [
+          "Gib mir eine zufällige wanderroute",
+          "Gib mir einen zufälligen wanderweg"
+        ],
+        "slots": []
+      },
+      {
+        "name": "WelcomeIntent",
+        "samples": [
+          "Hallo"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "wandern in tirol"
+  }
+}

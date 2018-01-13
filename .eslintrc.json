@@ -1,0 +1,9 @@
+{
+    "extends": "airbnb-base",
+    "rules":{
+        "indent": ["error", 4],
+        "max-len": ["error", { "code": 170, "tabWidth": 4 }],
+        "no-console":0,
+        "linebreak-style": "off"
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "HelpIntent",
+        "samples": [
+          "What can I do",
+          "Can you help me",
+          "What are my options",
+          "what am i supposed to say",
+          "how can i get information"
+        ],
+        "slots": []
+      },
+      {
+        "name": "RandomHikingIntent",
+        "samples": [
+          "Give me a random hiking route",
+          "Give me a random hiking"
+        ],
+        "slots": []
+      },
+      {
+        "name": "WelcomeIntent",
+        "samples": [
+          "Hello"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "tyrol hiking"
+  }
+}
