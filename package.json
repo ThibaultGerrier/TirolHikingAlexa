@@ -4,9 +4,12 @@
   "description": "A sample voice app that works with the Jovo framework",
   "main": "index.js",
   "dependencies": {
+    "fuse": "^0.4.0",
+    "fuse.js": "^3.2.0",
     "html-to-text": "^3.3.0",
     "jovo-framework": "<=1.0.0",
-    "request": "latest"
+    "request": "latest",
+    "webshot": "^0.18.0"
   },
   "devDependencies": {},
   "scripts": {

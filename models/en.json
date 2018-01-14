@@ -1,5 +1,2511 @@
 {
   "languageModel": {
+    "types": [
+      {
+        "name": "route_names",
+        "values": [
+          {
+            "id": "931119",
+            "name": {
+              "value": "Peace Walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931790",
+            "name": {
+              "value": "Round the Wildsee Lake (Lakeside Promenade)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931793",
+            "name": {
+              "value": "Seefeld-Römerweg-Münchner Str.-Seefeld (circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931795",
+            "name": {
+              "value": "Towards Mösern (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931801",
+            "name": {
+              "value": "From the Pfarrhügel (Parish Hill) to the idyllic Lake 'Wildsee'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931803",
+            "name": {
+              "value": "Inn Triendlsäge (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931806",
+            "name": {
+              "value": "Round the Weidachsee Lake",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931813",
+            "name": {
+              "value": "Achweg Path Obern-Ahrn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931815",
+            "name": {
+              "value": "Leutasch Ahrn-Burggraben-Ahrn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931817",
+            "name": {
+              "value": "Runst",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931819",
+            "name": {
+              "value": "Gasse-Reindlau-Gasse",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931823",
+            "name": {
+              "value": "Unterer Wiesenweg (Lower Meadow Path)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931825",
+            "name": {
+              "value": "Oberer Wiesenweg (Upper Meadow Path)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931827",
+            "name": {
+              "value": "Liftweg Path",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931829",
+            "name": {
+              "value": "Katzenkopf Leutasch-Wildmoos-Fludertal Valley-Katzenkopf Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931831",
+            "name": {
+              "value": "Through the Katzenloch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931833",
+            "name": {
+              "value": "Panoramic circular walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931835",
+            "name": {
+              "value": "Bee Nature Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931837",
+            "name": {
+              "value": "Reith Cultural Walking Path (circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931841",
+            "name": {
+              "value": "To the Adlerkanzel Viewpoint (Eagle's Pulpit)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932591",
+            "name": {
+              "value": "Teufelslochklamm (Devil's Hole Gorge)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932593",
+            "name": {
+              "value": "Karwendelklammsteig (Karwendel Gorge Track) circular walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932595",
+            "name": {
+              "value": "To the Scharnitzer Alm Alpine Hut and Inn Gasthof Wiesenhof",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932597",
+            "name": {
+              "value": "Mittenwald / nr. 58",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932599",
+            "name": {
+              "value": "Gießenbach / nr. 18,19,6",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932602",
+            "name": {
+              "value": "Plattsteig Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932645",
+            "name": {
+              "value": "Mösern (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932647",
+            "name": {
+              "value": "Round the Gschwandtkopf Hill (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932649",
+            "name": {
+              "value": "Over the Gschwandtkopf Hill (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932651",
+            "name": {
+              "value": "Seefeld-Reith-Auland-Seefeld (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932654",
+            "name": {
+              "value": "Hochleithenkopf Hill",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932656",
+            "name": {
+              "value": "Walk to Gießenbach and Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932658",
+            "name": {
+              "value": "3-Lake Circular Walk on the Seefeld Plateau",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932660",
+            "name": {
+              "value": "Bodenalm Alpine Hut-Ankerschlag (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932662",
+            "name": {
+              "value": "Wildmoos-Mösern (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932664",
+            "name": {
+              "value": "Hill Brunschkopf (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932666",
+            "name": {
+              "value": "Rosshütte Alpine Hut (Hill)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932668",
+            "name": {
+              "value": "Rosshütte Tour including the Zirbenweg Path",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932679",
+            "name": {
+              "value": "Reitherjochalm Alpine Hut (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935174",
+            "name": {
+              "value": "Leutasch-Seefeld-Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935184",
+            "name": {
+              "value": "Ganghoferweg Trail in the Gaistal Valley",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935187",
+            "name": {
+              "value": "Ahrn-Hochfluder-Weidach",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935198",
+            "name": {
+              "value": "Neuleutasch-Wildmoos-retour",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935203",
+            "name": {
+              "value": "Circular hike Wettersteinhütte Alpine Hut-Wangalm Alpine Hut-Hämmermoosalm Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935208",
+            "name": {
+              "value": "Rauthhütte Alpine Hut (from Obern, Moos and Klamm)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935211",
+            "name": {
+              "value": "Bauernwald-Gießenbach",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935214",
+            "name": {
+              "value": "Öfen-Salzbach-Hut Hämmermoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935217",
+            "name": {
+              "value": "Franzosensteig-Ederkanzel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935220",
+            "name": {
+              "value": "Gleirsch Gorge Track (circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935227",
+            "name": {
+              "value": "Via the Birzelkapelle Chapel to the Karwendelsteg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935234",
+            "name": {
+              "value": "Circular Walk along the Nederweg Path - Gleirschhöhe - Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935237",
+            "name": {
+              "value": "Seefeld-Scharnitz-Leutasch-Seefeld (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935244",
+            "name": {
+              "value": "Eppzirler Alm circular hike",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935247",
+            "name": {
+              "value": "Krummer Steig Track -Schönangersteig Track (Circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935250",
+            "name": {
+              "value": "Wildmoos-Hochmoos (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935253",
+            "name": {
+              "value": "Seefeld-Mösern-Buchen-Wildmoos-Seefeld (Circular Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935256",
+            "name": {
+              "value": "Through the Gaistal Valley to the Seebenalm Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935267",
+            "name": {
+              "value": "Through the Bergleintal Valley to the Meilerhütte Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935270",
+            "name": {
+              "value": "High Pasture / Alpine Hut Hike above the Gaistal Valley",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935273",
+            "name": {
+              "value": "Tillfußalm Alpine Hut-Steinernes Hüttl Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935276",
+            "name": {
+              "value": "Nördlinger Hütte Alpine Hut - Solsteinhaus Alpine House - train station Hochzirl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935281",
+            "name": {
+              "value": "Hike to the Source of the River Isar - Kastenalm Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935287",
+            "name": {
+              "value": "Through the Karwendeltal Valley to the Larchetalm Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935293",
+            "name": {
+              "value": "Kristenalm Alpine Hut, Möslalm Alpine Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935296",
+            "name": {
+              "value": "Hallerangeralm Alpine Hut and Hallerangerhaus Alpine House",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935772",
+            "name": {
+              "value": "Over the Seefelder Spitze, 2.220 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935781",
+            "name": {
+              "value": "Gehrenspitze, 2,367 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935790",
+            "name": {
+              "value": "Rotmoosalm Alpine hut, 2,030 m and Predigtstuhl Summit, 2,234 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935803",
+            "name": {
+              "value": "Hohe Munde Summit, 2.592 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935814",
+            "name": {
+              "value": "Hoher Sattel (High Saddle)-Große Arnspitze Summit-Unterleutasch, 2,196 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935822",
+            "name": {
+              "value": "Pleisenhütte Alpine Hut, 1,757 m and Pleisenspitze Summit, 2,569 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935836",
+            "name": {
+              "value": "Hohe Gleirsch Summit, 2,492 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935869",
+            "name": {
+              "value": "Große Arnspitze Summit, 2,196 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935875",
+            "name": {
+              "value": "Brunnsteinspitze Summit, 2,180 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935885",
+            "name": {
+              "value": "Grubenkarspitze Summit, 2,663 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935899",
+            "name": {
+              "value": "Birkkarspitze Summit, 2,749 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940275",
+            "name": {
+              "value": "Eagle Walk Stage 15: Solsteinhaus Lodge - Leutasch/Ahrn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940290",
+            "name": {
+              "value": "Eagle Walk Stage 16: Leutasch/Ahrn - Ehrwald",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940304",
+            "name": {
+              "value": "Jakosbsweg Etappe 11: Mittenwald-Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940311",
+            "name": {
+              "value": "Jakobsweg Etappe 12: from Buchen to Telfs/Mötz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1256188",
+            "name": {
+              "value": "Eagle Walk Stage 08: Erfurter Hütte - Lamsenjochhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257862",
+            "name": {
+              "value": "Eagle Walk Stage 09: Lamsenjoch Hut - Falken Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257892",
+            "name": {
+              "value": "Eagle Walk Stage 10: Falken Hut - Karwendelhaus Lodge",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257949",
+            "name": {
+              "value": "Eagle Walk Stage 11: Karwendelhaus Lodge - Hallerangerhaus Lodge",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257976",
+            "name": {
+              "value": "Eagle Walk Stage 12: Hallerangerhaus - Innsbruck",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1258000",
+            "name": {
+              "value": "Eagle Walk Stage 14: Innsbruck - Solsteinhaus Lodge",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1394093",
+            "name": {
+              "value": "From Seefeld to Gießenbach and Scharnitz (No.6)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1394199",
+            "name": {
+              "value": "Circular walk in the Möserer valley (No. 2 and 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1397172",
+            "name": {
+              "value": "Panoramic Trail in Reith (No. 89)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1453969",
+            "name": {
+              "value": "Seefeld - Mösern (No. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454068",
+            "name": {
+              "value": "Seefeld - Wildmoosalm - Lottensee - Mösern - Seefeld (nr. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454151",
+            "name": {
+              "value": "Winterwalk around the Wildsee lake (No. 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454167",
+            "name": {
+              "value": "Seefeld - Auland (nos. 4 and 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1574718",
+            "name": {
+              "value": "Reith - Leithen (Nr.14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1574818",
+            "name": {
+              "value": "Forest walking trail to Reith (no. 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1575325",
+            "name": {
+              "value": "Hocheggalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1575396",
+            "name": {
+              "value": "Wildmoosalm - Fludertal valley (No. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576884",
+            "name": {
+              "value": "Mountain hike Grüne Wand Hütte - Greizer Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576887",
+            "name": {
+              "value": "Vals starting point - Landshuter Hut / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576889",
+            "name": {
+              "value": "Vals starting point - Geraer Hut / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576891",
+            "name": {
+              "value": "Mountain hike Zillertaler Steinbockmarsch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576912",
+            "name": {
+              "value": "Zillergrund_Kasern_Gesamt",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576928",
+            "name": {
+              "value": "Wipptal starting point - Lake Brennersee - Landshuter Hut / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576930",
+            "name": {
+              "value": "Wipptal starting point - Kasern - Kleegrubenscharte / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576932",
+            "name": {
+              "value": "Wippta starting pointl - Kasern - Tuxerjochhaus / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576934",
+            "name": {
+              "value": "Starting point Wipptal - Toldern - Kleegrubenscharte / Peter Habeler Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576936",
+            "name": {
+              "value": "Peter-Habeler-Runde (Zustieg über St. Jakob - Landshuter Hütte)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576938",
+            "name": {
+              "value": "Peter-Habeler-Runde (Zustieg über Platz - Landshuter Hütte)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576940",
+            "name": {
+              "value": "Peter-Habeler-Runde (Zustieg über Stein - Pfitscherjochhaus)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576942",
+            "name": {
+              "value": "Starting Breitlahner-Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576944",
+            "name": {
+              "value": "Starting Ginzling - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576946",
+            "name": {
+              "value": "Starting Hintertux - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576948",
+            "name": {
+              "value": "Starting at Hintertux - Tuxerjochhaus / Peter-Habeler-Route",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576950",
+            "name": {
+              "value": "Starting Schlegeis - Olpererhütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576952",
+            "name": {
+              "value": "Zustieg Schlegeis - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576954",
+            "name": {
+              "value": "Mountain hike Schlegeisstausee - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576957",
+            "name": {
+              "value": "Mountain hike Rundwanderweg Schlegeisstausee - Olpererhütte - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576960",
+            "name": {
+              "value": "Pleasure Route - Zillertal hay milk cheese at Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576964",
+            "name": {
+              "value": "Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576970",
+            "name": {
+              "value": "Peter Habeler Route: Friesenberghaus - Olpererhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576972",
+            "name": {
+              "value": "Peter Habeler Route: Tuxerjochhaus - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576974",
+            "name": {
+              "value": "Peter Habeler Route: Geraerhütte - Tuxerjochhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576976",
+            "name": {
+              "value": "Peter Habeler Route: Landshuter Hütte - Geraerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576978",
+            "name": {
+              "value": "Peter Habeler Route: Pfitscherjochhaus - Landshuter Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576980",
+            "name": {
+              "value": "Peter Habeler Runde: Olpererhütte - Pfitscherjochhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576982",
+            "name": {
+              "value": "Mountain hike Au - Sundergrund (Mitterjoch)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577005",
+            "name": {
+              "value": "Brandberg - Gh Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577014",
+            "name": {
+              "value": "Ginzling - Tristenbachalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577030",
+            "name": {
+              "value": "Mountain hike Bärenbad - Hundskehljoch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577043",
+            "name": {
+              "value": "Alpine pasture hike Au - Kainzenhüttenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577048",
+            "name": {
+              "value": "Mountain hike Brandberg - Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577058",
+            "name": {
+              "value": "Mountain hike Brandberg - Steinerkogel - Laberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577070",
+            "name": {
+              "value": "Mountain hike Mayrhofen - Ahorn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577081",
+            "name": {
+              "value": "Mountain hike Ahorn - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577094",
+            "name": {
+              "value": "Mountain hike Edelhütte - Kasseler Hütte (Aschaffenburger Höhenweg oder Sieben-Schneide-Steig)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577116",
+            "name": {
+              "value": "Summit hike Ahorn - Filzenkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577130",
+            "name": {
+              "value": "Mountain hike Ginzling - Maxhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577142",
+            "name": {
+              "value": "Summit hike Brandberg Kolmhaus - Brandberger Kolm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577165",
+            "name": {
+              "value": "Mountain hike Breitlahner - Berliner Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577186",
+            "name": {
+              "value": "Mountain hike Finkenberg - Gamshütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577199",
+            "name": {
+              "value": "Mountain hike Mayrhofen - Astegg - Burgstall (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577206",
+            "name": {
+              "value": "Theme hiking tour Mayrhofen - Zimmereben (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577211",
+            "name": {
+              "value": "Theme hiking route Mayrhofen - Laimach (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577218",
+            "name": {
+              "value": "Theme hiking tour Kleinschwendberg (Round Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577225",
+            "name": {
+              "value": "Alpine pasture hike Bichl - Alte Kotahornalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577231",
+            "name": {
+              "value": "Alpine pasture hike/Connecting path Berggasthaus Gerlosstein - Neue Kotahornalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577240",
+            "name": {
+              "value": "Alpine pasture hike / Connecting path Panoramaweg - Route Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577243",
+            "name": {
+              "value": "Mountain hike Alpenrose (Föllenberg) - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577256",
+            "name": {
+              "value": "Mountain hike Stillup - Kasseler Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577261",
+            "name": {
+              "value": "Mayrhofen - Stilluptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577265",
+            "name": {
+              "value": "Mountain hike Ahorn - Stilluptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577270",
+            "name": {
+              "value": "Mountain hike Schlegeisstausee - Pfitscherjoch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577367",
+            "name": {
+              "value": "Mountain hike Bärenbad - Plauener Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577395",
+            "name": {
+              "value": "Theme hiking tour Ramsau - Bichl (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577401",
+            "name": {
+              "value": "Theme hking route Mayrhofen - Stumpfau (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577404",
+            "name": {
+              "value": "Theme hiking tour Mayrhofen (circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577407",
+            "name": {
+              "value": "Theme hiking route Mayrhofen - Oberkumbichl - Dorf Haus (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577410",
+            "name": {
+              "value": "Theme hiking tour Mayrhofen - Kumbichl - Dorf Haus (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577413",
+            "name": {
+              "value": "Theme hiking tour Ginzling (Short circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577416",
+            "name": {
+              "value": "Theme hiking tour Ginzling (Long circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577425",
+            "name": {
+              "value": "Talbach Wasserfallweg (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577428",
+            "name": {
+              "value": "Theme hiking tour Hippach - Schwendau (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577431",
+            "name": {
+              "value": "Mountain hike Astegg - Penken",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577439",
+            "name": {
+              "value": "Summit hike Penken - Rastkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577466",
+            "name": {
+              "value": "Summit hike Rastkogelhütte - Rastkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577480",
+            "name": {
+              "value": "Mountain hike Mayrhofen - Alpenrose",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577486",
+            "name": {
+              "value": "Summit hike Peter Habeler Gipfelanstieg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577512",
+            "name": {
+              "value": "Brandberg 'Bergmähderweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577525",
+            "name": {
+              "value": "Theme hiking tour Ginzling, von Karlsteg nach Breitlahner",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577536",
+            "name": {
+              "value": "Mayrhofen - Sidan Bridge (Round Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577539",
+            "name": {
+              "value": "Mayrhofen - Mühlbach (Round Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577542",
+            "name": {
+              "value": "Mayrhofen - Hochstegen (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577545",
+            "name": {
+              "value": "Mayrhofen - Hollenzen - Scheulingwald (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577551",
+            "name": {
+              "value": "Kumbichl - Zillergrund (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577554",
+            "name": {
+              "value": "Mayrhofen - Laimach (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577561",
+            "name": {
+              "value": "Ramsau - Bichl (Round Walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577564",
+            "name": {
+              "value": "Gh Roswitha - Schiestl's Sunnalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577593",
+            "name": {
+              "value": "Flurnamenweg Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577651",
+            "name": {
+              "value": "Gh Roswitha - Brindlingalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577654",
+            "name": {
+              "value": "Mountain hike Au - Sundergrund (Hörndljoch)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577727",
+            "name": {
+              "value": "Brandberg 'Kulturlandschaftsweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577732",
+            "name": {
+              "value": "Theme hiking tour Brandberg 'Kulturlandschaftsweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577737",
+            "name": {
+              "value": "Mountain hike Brandberg - Steinerkogel - Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577756",
+            "name": {
+              "value": "Alpine pasture hike Panoramaweg Ramsberg - Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577766",
+            "name": {
+              "value": "Mountain hike Brandberg - Steinerkogel - Kolmhaus (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577786",
+            "name": {
+              "value": "Alpine pasture hike Gerlosstein (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577815",
+            "name": {
+              "value": "Gletscherweg 'Berliner Hütte'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577829",
+            "name": {
+              "value": "Mountain hike Gerlossteinwand (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577873",
+            "name": {
+              "value": "Ginzling - Gh Innerböden",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577879",
+            "name": {
+              "value": "Mountain hike Mayrhofen - Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577890",
+            "name": {
+              "value": "Mayrhofen - Gh Wiesenhof (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577903",
+            "name": {
+              "value": "Mountain hike Mayrhofen - Zillergrund - Adlerblick",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577934",
+            "name": {
+              "value": "Alpine pasture hike Brandberg - Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577943",
+            "name": {
+              "value": "Mountain hike Ginzling - Greizer Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577959",
+            "name": {
+              "value": "Mountain hike Neumarkter Runde (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578042",
+            "name": {
+              "value": "Seefeld - Triendlsäge (No. 1 + 68)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578088",
+            "name": {
+              "value": "Triendlsäge - Seefeld (No. 68)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578116",
+            "name": {
+              "value": "Walking path to Lehenwald (nos. 65, 66 and 64)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578192",
+            "name": {
+              "value": "Circular walk Triendlsäge - Lehenwald (nos. 69, 19 and 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578239",
+            "name": {
+              "value": "Walking trail to the Gschwandtkopf mountain (No. 2, 4 and 85)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1591430",
+            "name": {
+              "value": "Round the Gschwandtkopf mountain (nos. 4, 96 and 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1593995",
+            "name": {
+              "value": "Wildmoos circular walk (No. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1598504",
+            "name": {
+              "value": "Unterer Wiesenweg (no. 32)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1628674",
+            "name": {
+              "value": "Reitherjochalm mountain hut (nos. 10 + 83) or (10 + 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1629205",
+            "name": {
+              "value": "Circular walk Seefeld - Brunschkopf high-altitude trail - Seefeld (no. 60)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680101",
+            "name": {
+              "value": "Scharnitz circular walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680132",
+            "name": {
+              "value": "Scharnitz - Gasthof Wiesenhof - Scharnitz (no. 221)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680149",
+            "name": {
+              "value": "Route S1: Brunschkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680158",
+            "name": {
+              "value": "Scharnitz - Gasthof Wiesenhof - Gleirschhöhe walking trail (No. 221)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680169",
+            "name": {
+              "value": "Scharnitz - Pleisenhütte (No. 28)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1682248",
+            "name": {
+              "value": "Scharnitz-Tannrain circular walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683616",
+            "name": {
+              "value": "Scharnitz - Mühlberg trail (No. 30)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683634",
+            "name": {
+              "value": "Scharnitz - Giessenbach (No. 18)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683639",
+            "name": {
+              "value": "Route S2: Gschwandtkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683661",
+            "name": {
+              "value": "Scharnitz - Mittenwald (No. 58)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683684",
+            "name": {
+              "value": "Route S4: To the alpine hut Rauthhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683692",
+            "name": {
+              "value": "Route S5: Mühlberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683696",
+            "name": {
+              "value": "Route S6: Isarsteig - Nederweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1699704",
+            "name": {
+              "value": "Route S7: To Chapel Birzlkapelle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723130",
+            "name": {
+              "value": "Reflection Path beHUMAN in Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723169",
+            "name": {
+              "value": "Geological Nature Trail 'Hermannstal'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723194",
+            "name": {
+              "value": "Way of imperator Maximilian",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723213",
+            "name": {
+              "value": "Way of the Cross (circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746838",
+            "name": {
+              "value": "Kneipp-Hikes (circular walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746853",
+            "name": {
+              "value": "Water and Herbs hike",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746868",
+            "name": {
+              "value": "Adventure hike for young and old",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1748565",
+            "name": {
+              "value": "Mountain hike Ahorn Bergstation",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1748586",
+            "name": {
+              "value": "Mayrhofen - Alpenrose Fellenberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1769488",
+            "name": {
+              "value": "Rosary Walking Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1769520",
+            "name": {
+              "value": "Calvary",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1800421",
+            "name": {
+              "value": "Leutasch-Seefeld (No. 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821810",
+            "name": {
+              "value": "Schlagweg-Rautgatter-Wildmoos (no. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821930",
+            "name": {
+              "value": "Obern-Rauthhütte (no. 8)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821959",
+            "name": {
+              "value": "Moos-Katzenloch-Buchen (no. 24)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821998",
+            "name": {
+              "value": "Oberer Wiesenweg (no. 33)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822027",
+            "name": {
+              "value": "Weidach-Katzenkopf (no. 34)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822046",
+            "name": {
+              "value": "Achweg-Klamm-Ahrn (no. 5) & optional extended walk to Unterleutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822077",
+            "name": {
+              "value": "Hämmermoosalm, Gaistalalm (nos. 7 and 41)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835735",
+            "name": {
+              "value": "Wildmoosalm - Fludertal (no 3) - Katzenkopf (no. 49)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835842",
+            "name": {
+              "value": "Circular walk around Weidachsee lake (no. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835876",
+            "name": {
+              "value": "Fludertal-Schiltenwiese-Neuleutasch (nos. 3 and 40)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837024",
+            "name": {
+              "value": "Weidachsee lake-Ostbach (no. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837037",
+            "name": {
+              "value": "Via the Wurzelsteig track (no. 42) to the hut Hochmoos Alm (no 34)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837043",
+            "name": {
+              "value": "Route S3: Hohe Fluder",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837052",
+            "name": {
+              "value": "To the alpine hut Rauthhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1859753",
+            "name": {
+              "value": "A few steps on The Way of St. James",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1874127",
+            "name": {
+              "value": "Scharnitz Kulturwanderweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1903311",
+            "name": {
+              "value": "Ahorn Winter Walking Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1929008",
+            "name": {
+              "value": "Mösern-Seefeld (No. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1929025",
+            "name": {
+              "value": "Mösern-Lottensee lake (no.2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952166",
+            "name": {
+              "value": "Möserer See Lake circular walk",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952188",
+            "name": {
+              "value": "Mösern-Wildmoosalm-Lottensee lake-Mösern (nos. 60, 2, 3 and 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952198",
+            "name": {
+              "value": "Mösern-Ropferstub'm (no. 2 + 27)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4105238",
+            "name": {
+              "value": "Mountain hike Sportalm - Rastkogelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4691413",
+            "name": {
+              "value": "Karwendelmarsch 52 km",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5002138",
+            "name": {
+              "value": "Karwendel March 35 km",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513955",
+            "name": {
+              "value": "Alpine pasture hike Ginzling - Oberböden (round walk)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513961",
+            "name": {
+              "value": "Ziller Sculpture Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513967",
+            "name": {
+              "value": "Theme hiking tour Mayrhofen - Burgstall - Mayrhofen (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513973",
+            "name": {
+              "value": "Theme hiking tour Mayrhofen - Hollenzen - Mayrhofen (Circular route)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6255787",
+            "name": {
+              "value": "Brunnsteinhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6258395",
+            "name": {
+              "value": "Oberbrunnalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313775",
+            "name": {
+              "value": "Möslalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313783",
+            "name": {
+              "value": "Kristenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313812",
+            "name": {
+              "value": "Eppzirler Alm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313841",
+            "name": {
+              "value": "Rotmoos Alm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6346548",
+            "name": {
+              "value": "Lamsenjochhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347570",
+            "name": {
+              "value": "Mittenwalder Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347582",
+            "name": {
+              "value": "Nördlinger Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347601",
+            "name": {
+              "value": "Pfeishütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6401640",
+            "name": {
+              "value": "To the Solsteinhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6404913",
+            "name": {
+              "value": "Zur Sonnenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6404993",
+            "name": {
+              "value": "IVV Rundwanderweg um den Brunschkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6869126",
+            "name": {
+              "value": "Tour of lawn toler",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "8092119",
+            "name": {
+              "value": "Mental Power Trail Leutasch - Brunschkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9054837",
+            "name": {
+              "value": "Ice Age Trail’ - 3 innovative trails on Brunschkopf mountain",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9054950",
+            "name": {
+              "value": "Seefeld Ski Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9890039",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 6) - Alternativroute",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9890082",
+            "name": {
+              "value": "Die Alpenüberquerung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014481",
+            "name": {
+              "value": "Berliner Höhenweg - 4th stage: Furtschaglhaus - Berliner Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014501",
+            "name": {
+              "value": "Berliner Höhenweg - 2nd stage: Friesenberghaus - Olpererhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014533",
+            "name": {
+              "value": "Berliner Höhenweg - 3rd stage: Olpererhütte - Furtschaglhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014545",
+            "name": {
+              "value": "Berliner Höhenweg - 1st stage: Gamshütte - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014648",
+            "name": {
+              "value": "Berliner Höhenweg - 6th stage: Greizer Hütte - Kasseler Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014712",
+            "name": {
+              "value": "Berliner Höhenweg - 5th stage: Berliner Hütte - Greizer Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10030505",
+            "name": {
+              "value": "Berliner Höhenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10030524",
+            "name": {
+              "value": "Berliner Höhenweg - 7th stage: Kasseler Hütte - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "11694231",
+            "name": {
+              "value": "Wettersteinhütte (no. 9)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255277",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255397",
+            "name": {
+              "value": "Die Alpenüberquerung Etappe 7   01",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255615",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 5)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255629",
+            "name": {
+              "value": "Die Alpenüberquerung Etappe 1   01",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255655",
+            "name": {
+              "value": "Die Alpenüberquerung Etappe 3   01",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "18321294",
+            "name": {
+              "value": "Through the Karwendeltal valley to the Birzelkapelle chapel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "29096479",
+            "name": {
+              "value": "To the Wildmoosalm hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "29096616",
+            "name": {
+              "value": "Hallerangerhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "30325039",
+            "name": {
+              "value": "Aumoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32042163",
+            "name": {
+              "value": "Eng - großer Ahornboden - Binsalm - Eng",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32102867",
+            "name": {
+              "value": "Von der Pfeishütte zur Bettelwurfhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32103045",
+            "name": {
+              "value": "Eng - Binsalm - Eng",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32103115",
+            "name": {
+              "value": "Through the Gaistal Valley to the Seebenalm and Coburgerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32118038",
+            "name": {
+              "value": "Leutascher Geisterklamm (Leutasch Spirit Gorge) - In the Realm of the Spirit of the Gorge",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236228",
+            "name": {
+              "value": "Zur Knorrhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236627",
+            "name": {
+              "value": "Von Hochzirl zur Magdeburger Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236958",
+            "name": {
+              "value": "Durchs Gaistal über die Knorrhütte zur Reintalangerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32237817",
+            "name": {
+              "value": "Von Garmisch zum Schachenhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32618280",
+            "name": {
+              "value": "Summit hike Mayrhofen - Ahorn peak",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32621347",
+            "name": {
+              "value": "Summit hike Rotbachlspitze",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "36794472",
+            "name": {
+              "value": "Theme hiking tour Easytrail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "46715476",
+            "name": {
+              "value": "Winterzauber Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49374162",
+            "name": {
+              "value": "Hiking tour Wasserfall - Grüne Wand Hut",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49375501",
+            "name": {
+              "value": "Mountain hike Schlegeisspeicher - Furtschaglhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49519316",
+            "name": {
+              "value": "Summit hike Ahornbahn Top Station - Ahornspitze Peak",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49523774",
+            "name": {
+              "value": "Panoramarundweg Penken",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56442563",
+            "name": {
+              "value": "Wöffi Tour 16 / Tag 2: Von den Zillertaler Alpen in die Hohen Tauern",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446113",
+            "name": {
+              "value": "Vom Ziller bis zum Talbachwasserfall",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446159",
+            "name": {
+              "value": "Wöffi Tour 3: Drei-Gipfel-Tour am Schwendberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446172",
+            "name": {
+              "value": "Wöffi Tour 2: Durch den Schluchtwald in die Metropole",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446208",
+            "name": {
+              "value": "Wöffi Tour 16 / Tag 1: Von den Zillertaler Alpen in die Hohen Tauern",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446268",
+            "name": {
+              "value": "Wöffi Tour 4: Wasserfälle, Blumenzauber, Murmeltiere",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446281",
+            "name": {
+              "value": "Wöffi Tour 5: Der Rote Zwilling über dem Pfitscher Joch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446292",
+            "name": {
+              "value": "Wöffi Tour 6: Im Bann des Zillertaler Riesen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446304",
+            "name": {
+              "value": "Wöffi Tour 7: Die einsame und grasige Wilde in der Gunggl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446315",
+            "name": {
+              "value": "Wöffi Tour 8: Auf dem Hannemannweg hoch über dem Zillergründl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446328",
+            "name": {
+              "value": "Wöffi Tour 9: Zwei Tage - zwei Gipfel am Tuxer Hauptkamm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446338",
+            "name": {
+              "value": "Wöffi Tour 9 / Tag 2: 2 Tage - zwei Gipfel am Tuxer Hauptkamm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446350",
+            "name": {
+              "value": "Wöffe Tour 10 / Tag 1: Vom Schloss der Alpen in die Gletscherregion",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446360",
+            "name": {
+              "value": "Wöffi Tour 10 / Tag 2: Vom Schloss der Alpen in die Gletscherregion",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446375",
+            "name": {
+              "value": "Wöffi Tour 11 / Tag 2: Auf den Köngi der Zillertaler Alpen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446387",
+            "name": {
+              "value": "Wöffi Tour 11 / Tag 1: Auf den König der Zillertaler Alpen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446397",
+            "name": {
+              "value": "Wöffi Tour 12 / Tag 1: Zum Wahrzeichen von Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446406",
+            "name": {
+              "value": "Wöffi Tour 12 / Tag 2: Zum Wahrzeichen von Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446417",
+            "name": {
+              "value": "Wöffi Tour 13 / Tag 2: Über sieben Schneiden musst du gehen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446426",
+            "name": {
+              "value": "Wöffi Tour 14 / Tag 1: Über sieben Schneiden musst du gehen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446442",
+            "name": {
+              "value": "Wöffi Tour 13 / Tag 1: Auf den Spuren von Zillertal und Wipptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446453",
+            "name": {
+              "value": "Wöffi Tour 14 / Tag 2: Auf Spurensuche vom Zillertal ins Wipptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446476",
+            "name": {
+              "value": "Wöffi Tour 15 / Tag 2: Bergseen und ein Aussichtsgipfel der Extraklasse",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446488",
+            "name": {
+              "value": "Wöffi Tour 15 / Tag 1: Bergseen und ein Aussichtsgipfel der Extraklasse",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464407",
+            "name": {
+              "value": "Berliner Hütte: Zur schönsten Hütte der Ostalpen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464419",
+            "name": {
+              "value": "Durch zauberhaften Wald in die wilde Gunggl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464426",
+            "name": {
+              "value": "Ins Wohnzimmer von Specht und Auerhuhn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464433",
+            "name": {
+              "value": "Naturdenkmal Schraubenfälle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464438",
+            "name": {
+              "value": "Panoramatour im Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464445",
+            "name": {
+              "value": "Sonnenaufgang im Tuxertal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464449",
+            "name": {
+              "value": "Unterschrammachkar - Juwel unter dem Olperer",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464456",
+            "name": {
+              "value": "Unterwegs im Tal des Ziller-Ursprungs",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464471",
+            "name": {
+              "value": "Wildtierbeobachtung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "57132504",
+            "name": {
+              "value": "Circular walk platform Kurblhang",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "58464854",
+            "name": {
+              "value": "Theme hiking trail Ahorn Leisure Trail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60400588",
+            "name": {
+              "value": "Karwendel Höhenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60477846",
+            "name": {
+              "value": "Etappe 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60478442",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 2): Nördlinger Hütte - Solsteinhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60479897",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 3): Solsteinhaus - Pfeishütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60480275",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 4): Pfeishütte - Bettelwurfhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60481171",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 5): Bettelwurfhütte - Hallerangerhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60481533",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 6): Hallerangerhaus - Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "64327379",
+            "name": {
+              "value": "Penken Panorama Trail",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
     "intents": [
       {
         "name": "AMAZON.CancelIntent",
@@ -62,17 +2568,6 @@
         "samples": []
       },
       {
-        "name": "HelpIntent",
-        "samples": [
-          "What can I do",
-          "Can you help me",
-          "What are my options",
-          "what am i supposed to say",
-          "how can i get information"
-        ],
-        "slots": []
-      },
-      {
         "name": "ContactIntent",
         "samples": [
           "How can i contact the owners",
@@ -103,6 +2598,17 @@
             "type": "AMAZON.DURATION"
           }
         ]
+      },
+      {
+        "name": "HelpIntent",
+        "samples": [
+          "What can I do",
+          "Can you help me",
+          "What are my options",
+          "what am i supposed to say",
+          "how can i get information"
+        ],
+        "slots": []
       },
       {
         "name": "ImageIntent",
@@ -143,14 +2649,6 @@
         "slots": []
       },
       {
-        "name": "RandomHikingIntent",
-        "samples": [
-          "Give me a random hiking route",
-          "Give me a random hiking"
-        ],
-        "slots": []
-      },
-      {
         "name": "NeartoIntent",
         "samples": [
           "Search fo hiking routes near {name}",
@@ -163,6 +2661,14 @@
             "type": "AMAZON.AT_CITY"
           }
         ]
+      },
+      {
+        "name": "RandomHikingIntent",
+        "samples": [
+          "Give me a random hiking route",
+          "Give me a random hiking"
+        ],
+        "slots": []
       },
       {
         "name": "SendInformationIntent",

@@ -2,7 +2,7 @@ const Fetcher = require('./fetcher');
 
 const app = require('jovo-framework').Jovo;
 const htmlToText = require('html-to-text');
-
+const Fuse = require('fuse.js');
 const strings = require('../models/localizedStrings');
 
 const annotations = {};
@@ -41,27 +41,47 @@ const getFeature = (obj, featureId) => {
     return null;
 };
 
-class Handler {
-    searchDurationRoute(hours, minutes){
-        const result = [];
-        let duration = 0;
-        if (hours) {
-            duration += Number(hours);
-        }
-        if (minutes) {
-            duration += Number((minutes / 60) * 100);
-        }
-        Object.values(annotations[this.lang]).forEach((ann) => {
-            const value = getFeature(ann, 'time_total');
-            if (value) {
-                if (value.toString() === duration.toString()) {
-                    result.push(ann);
-                }
-            }
-        });
-        return result;
+const searchDurationRoute=(hours, minutes,lang)=>{
+    const result = [];
+    let duration = 0;
+    if (hours) {
+        duration += Number(hours);
     }
+    if (minutes) {
+        duration += Number((minutes / 60) * 100);
+    }
+    Object.values(annotations[lang]).forEach((ann) => {
+        const value = getFeature(ann, 'time_total');
+        if (value) {
+            if (value.toString() === duration.toString()) {
+                result.push(ann);
+            }
+        }
+    });
+    return result;
+}
 
+const fuseSearch=(nameInput,lang)=>{
+    let result=null;
+    let input=Object.values(annotations[lang]);
+    let options = {
+        shouldSort: true,
+        keys: ['name'],
+        id: 'identifier'
+    }
+    var fuse = new Fuse(input, options)
+    let temp=fuse.search(nameInput);
+    if(temp===undefined){
+        return null;
+    }
+    if(temp.length>1){
+        return temp[0];
+    }
+    result=temp;
+    return result;
+}
+
+class Handler {
     constructor(lang) {
         this.lang = lang;
         this.handler = {
@@ -88,11 +108,11 @@ class Handler {
                 const hours = dur.split('H', 1);
                 dur = dur.substring(dur.indexOf('H') + 1);
                 const minutes = dur.split('M', 1);
-                const result = this.searchDurationRoute(hours, minutes);
+                const result = searchDurationRoute(hours, minutes,lang);
                 if (result.length === 0) {
                     app.ask(strings.dif_search_dur_not_found[lang].replace('$hours', hours).replace('$minutes', minutes));
                 } else {
-                    app.setSessionAttribute('annId', result[0].identifier);
+                    app.setSessionAttribute('annId', result[randNumber(result.length)].identifier);
                     app.followUpState('SelectedHiking');
                     app.ask(strings.dif_search_res[lang].replace('$length', result.length).replace('$name', result[0].name));
                 }
@@ -102,6 +122,21 @@ class Handler {
                 app.setSessionAttribute('annId', ann.identifier);
                 app.followUpState('SelectedHiking');
                 app.ask(strings.rand_hiking[lang].replace('$name', ann.name));
+            },
+            SearchNameIntent(nameRoute){
+                if(nameRoute===undefined){
+                    app.ask(strings.no_name[lang]);
+                }else{
+                    let result=fuseSearch(nameRoute,lang);
+                    if(result){
+                        const ann = annotations[lang][result];
+                        app.setSessionAttribute('annId', ann.identifier);
+                        app.followUpState('SelectedHiking');
+                        app.ask(strings.found_name[lang].replace('$routename', ann.name));
+                    }else{
+                        app.ask(strings.no_name[lang]);
+                    }
+                }
             },
             SelectedHiking: {
                 ContactIntent() {
@@ -156,7 +191,7 @@ class Handler {
                         content = `${content}${strings.time_word[lang]}: ${value}h\n\n`;
                     }
                     if (hasProp(ann, 'description')) {
-                        content = `${content}${strings.description_word_word[lang]}: \n${htmlToText.fromString(ann.description)}\n\n`;
+                        content = `${content}${strings.description_word[lang]}: \n${htmlToText.fromString(ann.description)}\n\n`;
                     }
 
                     console.log(content);
@@ -190,7 +225,7 @@ class Handler {
                     const ann = annotations[lang][app.getSessionAttribute('annId')];
                     const value = getFeature(ann, 'time_total').toString();
                     if (value) {
-                        app.ask(strings.length[lang].replace('$distance', value.replace('.', ',')));
+                        app.ask(strings.time[lang].replace('$time', value.replace('.', ',')));
                     } else {
                         app.ask(strings.no_time[lang]);
                     }

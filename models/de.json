@@ -1,5 +1,2518 @@
 ﻿{
   "languageModel": {
+    "types": [
+      {
+        "name": "ROUTE_NAME",
+        "values": [
+          {
+            "id": "931119",
+            "name": {
+              "value": "Friedenswanderweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931790",
+            "name": {
+              "value": "Rund um den Wildsee (Seepromenade)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931793",
+            "name": {
+              "value": "Seefeld-Römerweg-Münchner Str.-Seefeld (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931795",
+            "name": {
+              "value": "In Richtung Mösern",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931801",
+            "name": {
+              "value": "Vom Pfarrhügel zum idyllischen Seefelder Wildsee",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931803",
+            "name": {
+              "value": "Triendlsäge (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931806",
+            "name": {
+              "value": "Rund um den Weidachsee (Seerundgang)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931813",
+            "name": {
+              "value": "Achweg Obern-Ahrn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931815",
+            "name": {
+              "value": "Achweg Ahrn-Burggraben-Ahrn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931817",
+            "name": {
+              "value": "Runst",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931819",
+            "name": {
+              "value": "Gasse-Reindlau-Gasse",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931823",
+            "name": {
+              "value": "Unterer Wiesenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931825",
+            "name": {
+              "value": "Oberer Wiesenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931827",
+            "name": {
+              "value": "Liftweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931829",
+            "name": {
+              "value": "Katzenkopf Leutasch-Wildmoos-Fludertal-Katzenkopf Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931831",
+            "name": {
+              "value": "Durchs Katzenloch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931833",
+            "name": {
+              "value": "Panorama Rundwanderweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931835",
+            "name": {
+              "value": "Bienenlehrpfad",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931837",
+            "name": {
+              "value": "Kulturwanderweg Reith (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "931841",
+            "name": {
+              "value": "Zur Adlerkanzel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932591",
+            "name": {
+              "value": "Rundwanderung Teufelslochklamm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932593",
+            "name": {
+              "value": "Karwendelklammsteig Rundweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932595",
+            "name": {
+              "value": "Zur Scharnitzer Alm, Gasthof Wiesenhof",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932597",
+            "name": {
+              "value": "Mittenwald / Weg Nr. 58",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932599",
+            "name": {
+              "value": "Gießenbach / Weg Nr. 18, 19, 6",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932602",
+            "name": {
+              "value": "Rundwanderung Plattsteig",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932645",
+            "name": {
+              "value": "Seefeld-Mösern (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932647",
+            "name": {
+              "value": "Um den Gschwandtkopf (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932649",
+            "name": {
+              "value": "Über den Gschwandtkopf (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932651",
+            "name": {
+              "value": "Seefeld-Reith-Auland-Seefeld (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932654",
+            "name": {
+              "value": "Hochleithenkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932656",
+            "name": {
+              "value": "Nach Gießenbach und Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932658",
+            "name": {
+              "value": "3 Seen Rundwanderung am Seefelder Plateau",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932660",
+            "name": {
+              "value": "Bodenalm-Ankerschlag (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932662",
+            "name": {
+              "value": "Wildmoos-Mösern (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932664",
+            "name": {
+              "value": "Brunschkopf (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932666",
+            "name": {
+              "value": "Rosshütte (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932668",
+            "name": {
+              "value": "Rosshüttenwanderung mit Zirbenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "932679",
+            "name": {
+              "value": "Reitherjochalm (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935174",
+            "name": {
+              "value": "Leutasch-Seefeld-Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935184",
+            "name": {
+              "value": "Ganghoferweg im Gaistal - Gaistalalm - Tillfussalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935187",
+            "name": {
+              "value": "Ahrn-Hochfluder-Weidach",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935198",
+            "name": {
+              "value": "Neuleutasch-Wildmoos-retour",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935203",
+            "name": {
+              "value": "Rundwanderung Wettersteinhütte-Wangalm-Hämmermoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935208",
+            "name": {
+              "value": "Rauthhütte (von Obern, Moos und Klamm oder von Buchen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935211",
+            "name": {
+              "value": "Bauernwald-Gießenbach",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935214",
+            "name": {
+              "value": "Öfen-Salzbach-Hämmermoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935217",
+            "name": {
+              "value": "Franzosensteig-Ederkanzel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935220",
+            "name": {
+              "value": "Gleirschklammsteig (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935227",
+            "name": {
+              "value": "Über die Birzelkapelle zum Karwendelsteg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935234",
+            "name": {
+              "value": "Rundwanderung über Nederweg-Gleirschhöhe-Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935237",
+            "name": {
+              "value": "Seefeld-Scharnitz-Leutasch-Seefeld (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935244",
+            "name": {
+              "value": "Eppzirler Alm Rundweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935247",
+            "name": {
+              "value": "Krummer Steig-Schönangersteig (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935250",
+            "name": {
+              "value": "Wildmoos-Hochmoos (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935253",
+            "name": {
+              "value": "Seefeld-Mösern-Buchen-Wildmoos-Seefeld (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935256",
+            "name": {
+              "value": "Durch das Gaistal zur Seebenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935267",
+            "name": {
+              "value": "Meilerhütte durch das Bergleintal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935270",
+            "name": {
+              "value": "Hochalmwanderung oberhalb des Gaistales",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935273",
+            "name": {
+              "value": "Salzbach Parkplatz-Tillfussalm-Steinernes Hüttl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935276",
+            "name": {
+              "value": "Nördlinger Hütte - Solsteinhaus - Bahnhof Hochzirl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935281",
+            "name": {
+              "value": "Wanderung zum Isarursprung und zur Kastenalm und wieder retour",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935287",
+            "name": {
+              "value": "Karwendelhaus - Karwendeltal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935293",
+            "name": {
+              "value": "Kristenalm, Möslalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935296",
+            "name": {
+              "value": "Zur Hallerangeralm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935772",
+            "name": {
+              "value": "Über die Seefelder Spitze 2.220 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935781",
+            "name": {
+              "value": "Gehrenspitze, 2.367 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935790",
+            "name": {
+              "value": "Rotmoosalm, 2.030 m und Predigtstuhl, 2.234 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935803",
+            "name": {
+              "value": "Hohe Munde, 2.592 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935814",
+            "name": {
+              "value": "Hoher Sattel-Große Arnspitze-Unterleutasch, 2.196 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935822",
+            "name": {
+              "value": "Pleisenhütte, 1.757 m und Pleisenspitze, 2.569 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935836",
+            "name": {
+              "value": "Hohe Gleirsch, 2.492 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935869",
+            "name": {
+              "value": "Große Arnspitze, 2.196 m über Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935875",
+            "name": {
+              "value": "Brunnsteinspitze, 2.180 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935885",
+            "name": {
+              "value": "Grubenkarspitze, 2.663 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "935899",
+            "name": {
+              "value": "Birkkarspitze, 2.749 m",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940275",
+            "name": {
+              "value": "Adlerweg-Etappe 15: Solsteinhaus-Scharnitz-Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940290",
+            "name": {
+              "value": "Adlerweg-Etappe 16: Leutasch/Ahrn-Ehrwald",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940304",
+            "name": {
+              "value": "Jakobsweg Etappe 11: Von Mittenwald nach Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "940311",
+            "name": {
+              "value": "Jakobsweg Etappe 12: Von Buchen nach Telfs/Mötz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1256188",
+            "name": {
+              "value": "Adlerweg-Etappe 8: Erfurter Hütte-Pertisau-Lamsenjochhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257862",
+            "name": {
+              "value": "Adlerweg-Etappe 9: Lamsenjochhütte-Falkenhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257892",
+            "name": {
+              "value": "Adlerweg-Etappe 10: Falkenhütte – Karwendelhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257949",
+            "name": {
+              "value": "Adlerweg-Etappe 11: Karwendelhaus – Birkkarspitze – Hallerangerhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1257976",
+            "name": {
+              "value": "Adlerweg-Etappe 12: Hallerangerhaus – Pfeishütte – Hafelekar – Nordkette Innsbruck",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1258000",
+            "name": {
+              "value": "Adlerweg-Etappe 14: Innsbruck – Hochzirl – Solsteinhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1394093",
+            "name": {
+              "value": "Von Seefeld nach Gießenbach und Scharnitz (Nr.6)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1394199",
+            "name": {
+              "value": "Rundgang im Möserer Tal (Nr. 2 und 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1397172",
+            "name": {
+              "value": "Panoramaweg Reith (Nr. 89)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1453969",
+            "name": {
+              "value": "Seefeld - Mösern (Nr. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454068",
+            "name": {
+              "value": "Seefeld - Wildmoosalm - Lottensee - Mösern - Seefeld (Weg Nr. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454151",
+            "name": {
+              "value": "Winterwanderung rund um den Wildsee (Nr. 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1454167",
+            "name": {
+              "value": "Spazierweg Seefeld - Auland (Nr. 4 + 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1574718",
+            "name": {
+              "value": "Reith - Leithen (Nr. 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1574818",
+            "name": {
+              "value": "Waldweg nach Reith (Nr. 14)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1575325",
+            "name": {
+              "value": "Hocheggalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1575396",
+            "name": {
+              "value": "Wildmoosalm - Fludertal (Nr. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576884",
+            "name": {
+              "value": "Bergwanderung Grüne Wand Hütte - Greizer Hütte (über Lapenscharte)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576887",
+            "name": {
+              "value": "Zustieg Vals - Landshuter Hütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576889",
+            "name": {
+              "value": "Zustieg Vals - Geraer Hütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576891",
+            "name": {
+              "value": "Bergwanderung Zillertaler Steinbockmarsch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576912",
+            "name": {
+              "value": "Grenzwege erwandern am Alpenhauptkamm (Zillergrund - Arnthal) 3 Tages-Etappe",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576928",
+            "name": {
+              "value": "Zustieg Wipptal - Brennersee - Landshuter Hütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576930",
+            "name": {
+              "value": "Zustieg Wipptal - Kasern - Kleegrubenscharte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576932",
+            "name": {
+              "value": "Zustieg Wipptal - Kasern - Tuxerjochhaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576934",
+            "name": {
+              "value": "Zustieg Wipptal - Toldern - Kleegrubenscharte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576936",
+            "name": {
+              "value": "Zustieg St. Jakob - Landshuter Hütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576938",
+            "name": {
+              "value": "Zustieg Platz - Landshuter Hütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576940",
+            "name": {
+              "value": "Zustieg Stein - Pfitscherjochhaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576942",
+            "name": {
+              "value": "Zustieg Breitlahner - Friesenberg Haus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576944",
+            "name": {
+              "value": "Zustieg Ginzling - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576946",
+            "name": {
+              "value": "Zustieg Hintertux - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576948",
+            "name": {
+              "value": "Zustieg Hintertux - Tuxerjochhaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576950",
+            "name": {
+              "value": "Zustieg Schlegeis - Olpererhütte / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576952",
+            "name": {
+              "value": "Zustieg Schlegeis - Friesenberghaus / Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576954",
+            "name": {
+              "value": "Bergwanderung Schlegeisstausee - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576957",
+            "name": {
+              "value": "Bergwanderung Schlegeisstausee - Olpererhütte - Friesenberghaus (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576960",
+            "name": {
+              "value": "Genussroute Zillertaler Heumilchkäse am Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576964",
+            "name": {
+              "value": "Peter-Habeler-Runde",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576970",
+            "name": {
+              "value": "Peter Habeler Runde: Friesenberghaus - Olpererhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576972",
+            "name": {
+              "value": "Peter Habeler Runde: Tuxerjochhaus - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576974",
+            "name": {
+              "value": "Peter Habeler Runde: Geraerhütte - Tuxerjochhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576976",
+            "name": {
+              "value": "Peter Habeler Runde: Landshuter Hütte - Geraerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576978",
+            "name": {
+              "value": "Peter Habeler Runde: Pfitscherjochhaus - Landshuter Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576980",
+            "name": {
+              "value": "Peter Habeler Runde: Olpererhütte - Pfitscherjochhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1576982",
+            "name": {
+              "value": "Bergwanderung Au - Sundergrund (Mitterjoch)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577005",
+            "name": {
+              "value": "Brandberg - Gh Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577014",
+            "name": {
+              "value": "Ginzling - Tristenbachalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577030",
+            "name": {
+              "value": "Bergwanderung Bärenbad - Hundskehljoch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577043",
+            "name": {
+              "value": "Almwanderung Au - Kainzenhüttenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577048",
+            "name": {
+              "value": "Bergwanderung Brandberg - Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577058",
+            "name": {
+              "value": "Bergwanderung Brandberg - Steinerkogel - Laberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577070",
+            "name": {
+              "value": "Bergwanderung Mayrhofen - Ahorn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577081",
+            "name": {
+              "value": "Bergwanderung Ahorn - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577094",
+            "name": {
+              "value": "Bergwanderung Edelhütte - Kasseler Hütte (Aschaffenburger Höhenweg oder Sieben-Schneide-Steig)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577116",
+            "name": {
+              "value": "Gipfelwanderung Ahorn - Filzenkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577130",
+            "name": {
+              "value": "Bergwanderung Ginzling - Maxhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577142",
+            "name": {
+              "value": "Gipfelwanderung Brandberg Kolmhaus - Brandberger Kolm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577165",
+            "name": {
+              "value": "Bergwanderung Breitlahner - Berliner Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577186",
+            "name": {
+              "value": "Bergwanderung Finkenberg - Gamshütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577199",
+            "name": {
+              "value": "Bergwanderung Mayrhofen - Astegg - Burgstall (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577206",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Zimmereben (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577211",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Laimach (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577218",
+            "name": {
+              "value": "Themenwanderung Kleinschwendberg (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577225",
+            "name": {
+              "value": "Almwanderung Bichl - Alte Kotahornalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577231",
+            "name": {
+              "value": "Almwanderung Verbindungsweg Berggasthaus Gerlosstein - Neue Kotahornalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577240",
+            "name": {
+              "value": "Almwanderung Verbindungsweg Panoramaweg - Route Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577243",
+            "name": {
+              "value": "Bergwanderung Alpenrose (Föllenberg) - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577256",
+            "name": {
+              "value": "Bergwanderung Stillup - Kasseler Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577261",
+            "name": {
+              "value": "Mayrhofen - Stilluptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577265",
+            "name": {
+              "value": "Bergwanderung Ahorn - Stilluptal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577270",
+            "name": {
+              "value": "Bergwanderung Schlegeisstausee - Pfitscherjoch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577367",
+            "name": {
+              "value": "Bergwanderung Bärenbad - Plauener Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577395",
+            "name": {
+              "value": "Themenwanderung Ramsau - Bichl (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577401",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Stumpfau (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577404",
+            "name": {
+              "value": "Themenwanderung Mayrhofen (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577407",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Oberkumbichl - Dorf Haus (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577410",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Kumbichl - Dorf Haus (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577413",
+            "name": {
+              "value": "Themenwanderung Ginzling (kurzer Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577416",
+            "name": {
+              "value": "Themenwanderung Ginzling (langer Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577425",
+            "name": {
+              "value": "Themenwanderung Talbach Wasserfallweg (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577428",
+            "name": {
+              "value": "Themenwanderung Hippach - Schwendau (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577431",
+            "name": {
+              "value": "Bergwanderung Astegg - Penken",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577439",
+            "name": {
+              "value": "Gipfelwanderung Penken - Rastkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577466",
+            "name": {
+              "value": "Gipfelwanderung Rastkogelhütte - Rastkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577480",
+            "name": {
+              "value": "Bergwanderung Mayrhofen - Alpenrose",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577486",
+            "name": {
+              "value": "Gipfelwanderung Peter Habeler Gipfelanstieg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577512",
+            "name": {
+              "value": "Brandberg 'Bergmähderweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577525",
+            "name": {
+              "value": "Themenweg Ginzling, von Karlsteg nach Breitlahner",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577536",
+            "name": {
+              "value": "Mayrhofen - Sidanbrücke (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577539",
+            "name": {
+              "value": "Mayrhofen - Mühlbach (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577542",
+            "name": {
+              "value": "Mayrhofen - Hochstegen (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577545",
+            "name": {
+              "value": "Mayrhofen - Hollenzen - Scheulingwald (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577551",
+            "name": {
+              "value": "Kumbichl - Zillergrund (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577561",
+            "name": {
+              "value": "Ramsau - Bichl (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577564",
+            "name": {
+              "value": "Gh Roswitha - Schiestl's Sunnalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577593",
+            "name": {
+              "value": "Flurnamenweg Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577651",
+            "name": {
+              "value": "Gh Roswitha - Brindlingalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577654",
+            "name": {
+              "value": "Bergwanderung Au - Sundergrund (Hörndljoch)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577727",
+            "name": {
+              "value": "Brandberg 'Kulturlandschaftsweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577732",
+            "name": {
+              "value": "Themenwanderung Brandberg 'Kulturlandschaftsweg'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577737",
+            "name": {
+              "value": "Bergwanderung Brandberg - Steinerkogel - Kolmhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577756",
+            "name": {
+              "value": "Almwanderung Panoramaweg Ramsberg - Brandberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577766",
+            "name": {
+              "value": "Bergwanderung Brandberg - Steinerkogel - Kolmhaus (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577786",
+            "name": {
+              "value": "Almwanderung Gerlosstein (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577815",
+            "name": {
+              "value": "Gletscherweg 'Berliner Hütte'",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577829",
+            "name": {
+              "value": "Bergwanderung Gerlossteinwand (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577873",
+            "name": {
+              "value": "Ginzling - Gh Innerböden",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577879",
+            "name": {
+              "value": "Bergwanderung Mayrhofen - Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577890",
+            "name": {
+              "value": "Mayrhofen - Gh Wiesenhof (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577903",
+            "name": {
+              "value": "Bergwanderung Mayrhofen - Zillergrund - Adlerblick",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577934",
+            "name": {
+              "value": "Almwanderung Brandberg - Steinerkogel",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577943",
+            "name": {
+              "value": "Bergwanderung Ginzling - Greizer Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1577959",
+            "name": {
+              "value": "Bergwanderung Neumarkter Runde (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578042",
+            "name": {
+              "value": "Seefeld - Triendlsäge (Nr. 68 + 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578088",
+            "name": {
+              "value": "Triendlsäge - Seefeld (Nr. 68)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578116",
+            "name": {
+              "value": "Spazierweg zum Lehenwald (Nr. 65, 66 + 64)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578192",
+            "name": {
+              "value": "Rundweg Triendlsäge - Lehenwald (Nr. 69, 19 + 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1578239",
+            "name": {
+              "value": "Wanderweg auf den Gschwandtkopf (Nr. 2, 4 und 85)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1591430",
+            "name": {
+              "value": "Rund um den Gschwandtkopf (Nr. 4, 96 und 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1593995",
+            "name": {
+              "value": "Rundwanderung Wildmoos (Nr. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1598504",
+            "name": {
+              "value": "Unterer Wiesenweg (Nr. 32)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1628674",
+            "name": {
+              "value": "Reitherjochalm (Nr. 83 + 10) oder (14 + 10)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1629205",
+            "name": {
+              "value": "Rundwanderung Seefeld - Brunschkopf Höhenweg - Seefeld (Nr. 60)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680101",
+            "name": {
+              "value": "Rundwanderweg Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680132",
+            "name": {
+              "value": "Scharnitz - Gasthof Wiesenhof - Scharnitz (Nr. 221)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680149",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S1: Brunschkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680158",
+            "name": {
+              "value": "Wanderweg Scharnitz - Gasthof Wiesenhof - Gleirschhöhe (Nr. 221)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1680169",
+            "name": {
+              "value": "Scharnitz - Pleisenhütte (Nr. 28)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1682248",
+            "name": {
+              "value": "Rundwanderweg Scharnitz Tannrain",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683616",
+            "name": {
+              "value": "Wanderweg Scharnitz - Mühlberg (Nr. 30)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683634",
+            "name": {
+              "value": "Scharnitz - Gießenbach (Nr. 18)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683639",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S2: Gschwandtkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683661",
+            "name": {
+              "value": "Scharnitz - Mittenwald (Nr. 58)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683684",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S4: Zur Rauthhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683692",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S5: Mühlberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1683696",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S6: Isarsteig - Nederweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1699704",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S7: Birzlkapelle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723130",
+            "name": {
+              "value": "Rundwanderung Besinnungsweg MENSCHsein - Leutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723169",
+            "name": {
+              "value": "Geoweg Hermannstal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723194",
+            "name": {
+              "value": "Kaiser-Maximilian-Weg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1723213",
+            "name": {
+              "value": "Kreuzweg auf den Pfarrhügel (Rundwanderung)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746838",
+            "name": {
+              "value": "Kneippwanderung Seefeld (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746853",
+            "name": {
+              "value": "Wasser- und Kräuterwanderung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1746868",
+            "name": {
+              "value": "Erlebniswanderung für Groß und Klein",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1748565",
+            "name": {
+              "value": "Bergwanderung Ahorn Bergstation",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1748586",
+            "name": {
+              "value": "Mayrhofen - Alpenrose Fellenberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1769488",
+            "name": {
+              "value": "Rosenkranzweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1769520",
+            "name": {
+              "value": "Kalvarienberg Mösern",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1800421",
+            "name": {
+              "value": "Leutasch-Seefeld (Nr. 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821810",
+            "name": {
+              "value": "Schlagweg-Rautgatter-Wildmoos (Nr. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821930",
+            "name": {
+              "value": "Obern-Rauthhütte (Nr. 8)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821959",
+            "name": {
+              "value": "Moos-Katzenloch-Buchen (Nr. 24)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1821998",
+            "name": {
+              "value": "Oberer Wiesenweg (Nr. 33)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822027",
+            "name": {
+              "value": "Weidach-Katzenkopf (Nr. 34)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822046",
+            "name": {
+              "value": "Achweg-Klamm-Ahrn (Nr. 5) & Fortsetzung nach Unterleutasch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1822077",
+            "name": {
+              "value": "Hämmermoosalm, Gaistalalm (Nr. 7, Nr. 41)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835735",
+            "name": {
+              "value": "Wildmoosalm - Fludertal (Nr. 3) - Katzenkopf (Nr. 49)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835842",
+            "name": {
+              "value": "Rund um den Weidachsee (Nr. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1835876",
+            "name": {
+              "value": "Fludertal-Schiltenwiese-Neuleutasch (Nr. 3, Nr. 40)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837024",
+            "name": {
+              "value": "Weidachsee-Ostbach (Nr. 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837037",
+            "name": {
+              "value": "Über den Wurzelsteig (Nr. 42) zur Hochmoos Alm (Nr. 34)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837043",
+            "name": {
+              "value": "Schneeschuhwanderung: Weg Nr. S3: Hohe Fluder",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1837052",
+            "name": {
+              "value": "Zur Rauthhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1859753",
+            "name": {
+              "value": "Ein paar Schritte auf dem Jakobsweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1874127",
+            "name": {
+              "value": "Kulturwanderweg Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1903311",
+            "name": {
+              "value": "Winterwanderweg Ahorn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1929008",
+            "name": {
+              "value": "Mösern-Seefeld (Nr.2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1929025",
+            "name": {
+              "value": "Mösern-Lottensee-Mösern (Nr. 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952166",
+            "name": {
+              "value": "Möserer See Rundwanderung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952188",
+            "name": {
+              "value": "Mösern-Wildmoosalm-Lottensee-Mösern (Nr.60,2,3,2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "1952198",
+            "name": {
+              "value": "Mösern - Ropferstub'm (Nr. 2, 27)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4105238",
+            "name": {
+              "value": "Bergwanderung Sportalm - Rastkogelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4691413",
+            "name": {
+              "value": "Karwendelmarsch 52 km",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5002138",
+            "name": {
+              "value": "Karwendelmarsch 35 km",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513955",
+            "name": {
+              "value": "Almwanderung Ginzling - Oberböden (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513961",
+            "name": {
+              "value": "Themenwanderung Ziller Skulpturenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513967",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Burgstall - Mayrhofen (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5513973",
+            "name": {
+              "value": "Themenwanderung Mayrhofen - Hollenzen - Mayrhofen (Rundwanderweg)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6255787",
+            "name": {
+              "value": "Brunnsteinhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6258395",
+            "name": {
+              "value": "Oberbrunnalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313775",
+            "name": {
+              "value": "Möslalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313783",
+            "name": {
+              "value": "Kristenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313812",
+            "name": {
+              "value": "Eppzirler Alm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6313841",
+            "name": {
+              "value": "Wanderung zur Rotmoos Alm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6346548",
+            "name": {
+              "value": "Lamsenjochhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347570",
+            "name": {
+              "value": "Mittenwalder Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347582",
+            "name": {
+              "value": "Nördlinger Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6347601",
+            "name": {
+              "value": "Pfeishütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6401640",
+            "name": {
+              "value": "Zum Solsteinhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6404913",
+            "name": {
+              "value": "Zur Sonnenalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6404993",
+            "name": {
+              "value": "IVV Rundwanderweg um den Brunschkopf",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6869126",
+            "name": {
+              "value": "Toler (Unterleutascher) Wiesenrundgang",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "8092119",
+            "name": {
+              "value": "Mental-Power-Weg Leutasch-Brunschkopf - Wandern auf den Promenaden der Olympiaregion Seefeld",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9054837",
+            "name": {
+              "value": "Der Eiszeit-Weg - Wandern auf den Promenaden der Olympiaregion Seefeld",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9054950",
+            "name": {
+              "value": "Seefelder Skisport Spur - Wandern auf den Promenaden der Olympiaregion Seefeld",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9890039",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 6) - Alternativroute",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9890082",
+            "name": {
+              "value": "Die Alpenüberquerung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014481",
+            "name": {
+              "value": "Berliner Höhenweg - 4. Etappe: Furtschaglhaus - Berliner Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014501",
+            "name": {
+              "value": "Berliner Höhenweg - 2. Etappe: Friesenberghaus - Olpererhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014533",
+            "name": {
+              "value": "Berliner Höhenweg - 3. Etappe: Olpererhütte - Furtschaglhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014545",
+            "name": {
+              "value": "Berliner Höhenweg - 1. Etappe: Gamshütte - Friesenberghaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014648",
+            "name": {
+              "value": "Berliner Höhenweg - 6. Etappe: Greizer Hütte - Kasseler Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10014712",
+            "name": {
+              "value": "Berliner Höhenweg - 5. Etappe: Berliner Hütte - Greizer Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10030505",
+            "name": {
+              "value": "Berliner Höhenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10030524",
+            "name": {
+              "value": "Berliner Höhenweg - 7. Etappe: Kasseler Hütte - Edelhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "11694231",
+            "name": {
+              "value": "Wettersteinhütte (Nr. 9)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255277",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 4)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255397",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 7)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255512",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 6)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255615",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 2)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255629",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 1)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255655",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 3)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "16255696",
+            "name": {
+              "value": "Die Alpenüberquerung (Etappe 5)",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "18321294",
+            "name": {
+              "value": "Durch das Karwendeltal zur Birzelkapelle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "29096479",
+            "name": {
+              "value": "Zur Wildmoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "29096616",
+            "name": {
+              "value": "Hallerangerhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "30325039",
+            "name": {
+              "value": "Aumoosalm",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32042163",
+            "name": {
+              "value": "Eng - großer Ahornboden - Binsalm - Eng",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32102867",
+            "name": {
+              "value": "Von der Pfeishütte zur Bettelwurfhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32103045",
+            "name": {
+              "value": "Eng - Binsalm - Eng",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32103115",
+            "name": {
+              "value": "Durch das Gaistal zur Seebenalm und weiter zur Coburgerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32118038",
+            "name": {
+              "value": "Leutascher Geisterklamm - Im Reich des Klammgeistes",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236228",
+            "name": {
+              "value": "Zur Knorrhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236627",
+            "name": {
+              "value": "Von Hochzirl zur Magdeburger Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32236958",
+            "name": {
+              "value": "Von Garmisch zur Reintalangerhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32237817",
+            "name": {
+              "value": "Von Garmisch zum Schachenhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32618280",
+            "name": {
+              "value": "Gipfelwanderung Mayrhofen - Ahornspitze",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "32621347",
+            "name": {
+              "value": "Gipfelwanderung Rotbachlspitze",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "36794472",
+            "name": {
+              "value": "Themenwanderung Easytrail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "46715476",
+            "name": {
+              "value": "Winterzauber Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49374162",
+            "name": {
+              "value": "Bergwanderung Gasthaus Wasserfall - Grüne Wand Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49375501",
+            "name": {
+              "value": "Bergwanderung Schlegeisspeicher - Furtschaglhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49519316",
+            "name": {
+              "value": "Gipfelwanderung Ahornbahn Bergstation - Ahornspitze",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "49523774",
+            "name": {
+              "value": "Panoramarundweg Penken",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56442563",
+            "name": {
+              "value": "Von den Zillertaler Alpen in die Hohen Tauern / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446113",
+            "name": {
+              "value": "Vom Ziller bis zum Talbachwasserfall",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446159",
+            "name": {
+              "value": "Drei-Gipfel-Tour am Schwendberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446172",
+            "name": {
+              "value": "Durch den Schluchtwald in die Metropole",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446208",
+            "name": {
+              "value": "Von den Zillertaler Alpen in die Hohen Tauern / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446268",
+            "name": {
+              "value": "Wasserfälle, Blumenzauber, Murmeltiere",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446281",
+            "name": {
+              "value": "Der Rote Zwilling über dem Pfitscher Joch",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446292",
+            "name": {
+              "value": "Im Bann des Zillertaler Riesen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446304",
+            "name": {
+              "value": "Die einsame und grasige Wilde in der Gunggl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446315",
+            "name": {
+              "value": "Auf dem Hannemannweg hoch über dem Zillergründl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446328",
+            "name": {
+              "value": "Zwei Tage - zwei Gipfel am Tuxer Hauptkamm / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446338",
+            "name": {
+              "value": "Zwei Tage - zwei Gipfel am Tuxer Hauptkamm / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446350",
+            "name": {
+              "value": "Vom Schloss der Alpen in die Gletscherregion / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446360",
+            "name": {
+              "value": "Vom Schloss der Alpen in die Gletscherregion / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446375",
+            "name": {
+              "value": "Auf den König der Zillertaler Alpen / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446387",
+            "name": {
+              "value": "Auf den König der Zillertaler Alpen / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446397",
+            "name": {
+              "value": "Zum Wahrzeichen von Brandberg / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446406",
+            "name": {
+              "value": "Zum Wahrzeichen von Brandberg / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446417",
+            "name": {
+              "value": "Über sieben Schneiden musst du gehen / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446426",
+            "name": {
+              "value": "Über sieben Schneiden musst du gehen / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446442",
+            "name": {
+              "value": "Auf den Spuren von Zillertal und Wipptal / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446453",
+            "name": {
+              "value": "Auf Spurensuche vom Zillertal ins Wipptal / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446476",
+            "name": {
+              "value": "Bergseen und ein Aussichtsgipfel der Extraklasse / Tag 2",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56446488",
+            "name": {
+              "value": "Bergseen und ein Aussichtsgipfel der Extraklasse / Tag 1",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464407",
+            "name": {
+              "value": "Berliner Hütte: Zur schönsten Hütte der Ostalpen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464419",
+            "name": {
+              "value": "Durch zauberhaften Wald in die wilde Gunggl",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464426",
+            "name": {
+              "value": "Ins Wohnzimmer von Specht und Auerhuhn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464433",
+            "name": {
+              "value": "Naturdenkmal Schraubenfälle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464438",
+            "name": {
+              "value": "Panoramatour im Zillergrund",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464445",
+            "name": {
+              "value": "Sonnenaufgang im Tuxertal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464449",
+            "name": {
+              "value": "Unterschrammachkar - Juwel unter dem Olperer",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464456",
+            "name": {
+              "value": "Unterwegs im Tal des Ziller-Ursprungs",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "56464471",
+            "name": {
+              "value": "Wildtierbeobachtung",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "57132504",
+            "name": {
+              "value": "Rundwanderweg „Aussichtsplattform Kurblhang“",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "58464854",
+            "name": {
+              "value": "Themenwanderung Genießerrundweg Ahorn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60400588",
+            "name": {
+              "value": "Karwendel Höhenweg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60477846",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 1): Reith bei Seefeld - Nördlinger Hütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60478442",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 2): Nördlinger Hütte - Solsteinhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60479897",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 3): Solsteinhaus - Pfeishütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60480275",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 4): Pfeishütte - Bettelwurfhütte",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60481171",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 5): Bettelwurfhütte - Hallerangerhaus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "60481533",
+            "name": {
+              "value": "Karwendel Höhenweg (Etappe 6): Hallerangerhaus - Scharnitz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "64327379",
+            "name": {
+              "value": "Winterwanderweg Penken",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
     "intents": [
       {
         "name": "AMAZON.CancelIntent",
@@ -141,14 +2654,6 @@
         "slots": []
       },
       {
-        "name": "RandomHikingIntent",
-        "samples": [
-          "Gib mir eine zufällige wanderroute",
-          "Gib mir einen zufälligen wanderweg"
-        ],
-        "slots": []
-      },
-      {
         "name": "NeartoIntent",
         "samples": [
           "Suche Wanderwege in {name}",
@@ -161,6 +2666,14 @@
             "type": "AMAZON.AT_CITY"
           }
         ]
+      },
+      {
+        "name": "RandomHikingIntent",
+        "samples": [
+          "Gib mir eine zufällige wanderroute",
+          "Gib mir einen zufälligen wanderweg"
+        ],
+        "slots": []
       },
       {
         "name": "SendInformationIntent",
