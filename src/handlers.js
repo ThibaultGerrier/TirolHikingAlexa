@@ -4,6 +4,8 @@ const app = require('jovo-framework').Jovo;
 const htmlToText = require('html-to-text');
 const Fuse = require('fuse.js');
 const strings = require('../models/localizedStrings');
+const webshot = require('webshot');
+const ngrok='https://343403b5.ngrok.io/image/?image=';
 
 const annotations = {};
 const seefeldDataDE = new Fetcher('seefeld', 'de', () => {
@@ -235,7 +237,15 @@ class Handler {
                     const ann = annotations[lang][app.getSessionAttribute('annId')];
                     if (hasProp(ann, 'hasMap')) {
                         const title = ann.name;
-                        app.showSimpleCard(title, ann.hasMap).ask(strings.map[lang]);
+                        webshot(ann.hasMap, '../images/'+title+'.jpg', function(err) {
+                            if(err){
+                                app.ask(strings.no_map[lang]);
+                            }else{
+                                app.showImageCard(title, ann.hasMap,ngrok+title+'.jpg').ask(strings.map[lang]);
+                            }
+                        });
+
+
                     } else {
                         app.ask(strings.no_map[lang]);
                     }
