@@ -110,5 +110,17 @@
   "bye": {
     "de": "Auf wiedersehen!",
     "en": "Good bye!"
+  },
+  "no_city_name": {
+    "de": "Tut mir Leid ich kenne diese stadt nicht",
+    "en": "Sorry, unfortunately i don't know this city"
+  },
+  "error": {
+    "de": "Leider gab es einen fehler beim auswerten von informationen",
+    "en": "Unfortunately an error happened while evaluation information"
+  },
+  "nearest_trail": {
+    "de": "Der nächst gelegene Wanderweg mit $distance kilometer entfernung ist $name",
+    "en": "The next hiking trail with a distance of $distance kilometer is $name"
   }
 }

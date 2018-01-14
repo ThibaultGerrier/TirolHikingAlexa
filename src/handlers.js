@@ -1,11 +1,20 @@
-const Fetcher = require('./fetcher');
-
 const app = require('jovo-framework').Jovo;
 const htmlToText = require('html-to-text');
 const Fuse = require('fuse.js');
-const strings = require('../models/localizedStrings');
 const webshot = require('webshot');
-const ngrok='https://343403b5.ngrok.io/image/?image=';
+const googleMaps = require('@google/maps');
+const geolib = require('geolib');
+
+const strings = require('../models/localizedStrings');
+const keys = require('../misc/keys');
+
+const Fetcher = require('./fetcher');
+
+const ngrok = 'http://c2b588bf.ngrok.io/image/?image=';
+
+const googleMapsClient = googleMaps.createClient({
+    key: keys.googleApiKey,
+});
 
 const annotations = {};
 const seefeldDataDE = new Fetcher('seefeld', 'de', () => {
@@ -43,7 +52,7 @@ const getFeature = (obj, featureId) => {
     return null;
 };
 
-const searchDurationRoute=(hours, minutes,lang)=>{
+const searchDurationRoute = (hours, minutes, lang) => {
     const result = [];
     let duration = 0;
     if (hours) {
@@ -61,27 +70,61 @@ const searchDurationRoute=(hours, minutes,lang)=>{
         }
     });
     return result;
-}
+};
 
-const fuseSearch=(nameInput,lang)=>{
-    let result=null;
-    let input=Object.values(annotations[lang]);
-    let options = {
+const fuseSearch = (nameInput, lang) => {
+    let result = null;
+    const input = Object.values(annotations[lang]);
+    const options = {
         shouldSort: true,
         keys: ['name'],
-        id: 'identifier'
-    }
-    var fuse = new Fuse(input, options)
-    let temp=fuse.search(nameInput);
-    if(temp===undefined){
+        id: 'identifier',
+    };
+    const fuse = new Fuse(input, options);
+    const temp = fuse.search(nameInput);
+    if (temp === undefined) {
         return null;
     }
-    if(temp.length>1){
+    if (temp.length > 1) {
         return temp[0];
     }
-    result=temp;
+    result = temp;
     return result;
-}
+};
+
+const maxDist = 100000000;
+const searchNearest = (lat, lng, lang) => {
+    let minDist = maxDist;
+    let minPlace;
+    Object.values(annotations[lang]).forEach((v) => {
+        let geos = v.geo;
+        if (!Array.isArray(v.geo)) {
+            geos = [v.geo];
+        }
+        geos.forEach((singleGeo) => {
+            const coordinates = singleGeo.line.split(' ');
+            console.log(coordinates[0], coordinates[1], coordinates[coordinates.length - 2], coordinates[coordinates.length - 1]);
+            const distStartPoint = geolib.getDistance(
+                { latitude: coordinates[0], longitude: coordinates[1] },
+                { latitude: lat, longitude: lng },
+            );
+            const distEndPoint = geolib.getDistance(
+                { latitude: coordinates[coordinates.length - 2], longitude: coordinates[coordinates.length - 1] },
+                { latitude: lat, longitude: lng },
+            );
+            console.log(distStartPoint, distEndPoint);
+            if (distEndPoint < minDist) {
+                minDist = distEndPoint;
+                minPlace = v;
+            }
+            if (distStartPoint < minDist) {
+                minDist = distStartPoint;
+                minPlace = v;
+            }
+        });
+    });
+    return { minPlace, minDist };
+};
 
 class Handler {
     constructor(lang) {
@@ -101,8 +144,49 @@ class Handler {
                 console.log();
                 app.tell(strings.help.de);
             },
-            NeartoIntent() {
-                // TODO
+            NeartoIntent(name) {
+                console.log(name);
+                if (name === undefined) {
+                    app.tell(strings.no_city_name[lang]);
+                } else {
+                    googleMapsClient.geocode({
+                        address: name,
+                        region: 'tirol',
+                    }, (err, response) => {
+                        if (!err) {
+                            const places = response.json.results;
+                            if (places.length === 0) {
+                                app.tell(strings.no_city_name[lang]);
+                                console.log('no city');
+                                return;
+                            }
+                            if (places.length < 0) {
+                                console.log('more places');
+                                console.log(JSON.stringify(response.json.results, null, 2));
+                            }
+                            const place = places[0];
+                            if (!place.geometry.location) {
+                                console.log('no coors');
+                                return;
+                            }
+                            const { lat, lng } = place.geometry.location;
+                            console.log(lat, lng);
+                            const { minPlace, minDist } = searchNearest(lat, lng, lang);
+                            if (!minPlace || minDist === maxDist) {
+                                app.tell(strings.error[lang]);
+                                return;
+                            }
+                            const dist = (lang === 'de' ? (minDist / 1000).toString().replace('.', ',') : (minDist / 1000).toString());
+                            console.log(dist);
+                            app.setSessionAttribute('annId', minPlace.identifier);
+                            app.followUpState('SelectedHiking');
+                            app.ask(strings.nearest_trail[lang].replace('$distance', dist).replace('$name', minPlace.name));
+                        } else {
+                            console.log(err, response);
+                            app.tell(strings.error[lang]);
+                        }
+                    });
+                }
             },
             DifficultySearchIntent(duration) {
                 let dur = duration;
@@ -110,7 +194,7 @@ class Handler {
                 const hours = dur.split('H', 1);
                 dur = dur.substring(dur.indexOf('H') + 1);
                 const minutes = dur.split('M', 1);
-                const result = searchDurationRoute(hours, minutes,lang);
+                const result = searchDurationRoute(hours, minutes, lang);
                 if (result.length === 0) {
                     app.ask(strings.dif_search_dur_not_found[lang].replace('$hours', hours).replace('$minutes', minutes));
                 } else {
@@ -125,17 +209,17 @@ class Handler {
                 app.followUpState('SelectedHiking');
                 app.ask(strings.rand_hiking[lang].replace('$name', ann.name));
             },
-            SearchNameIntent(nameRoute){
-                if(nameRoute===undefined){
+            SearchNameIntent(nameRoute) {
+                if (nameRoute === undefined) {
                     app.ask(strings.no_name[lang]);
-                }else{
-                    let result=fuseSearch(nameRoute,lang);
-                    if(result){
+                } else {
+                    const result = fuseSearch(nameRoute, lang);
+                    if (result) {
                         const ann = annotations[lang][result];
                         app.setSessionAttribute('annId', ann.identifier);
                         app.followUpState('SelectedHiking');
                         app.ask(strings.found_name[lang].replace('$routename', ann.name));
-                    }else{
+                    } else {
                         app.ask(strings.no_name[lang]);
                     }
                 }
@@ -237,15 +321,13 @@ class Handler {
                     const ann = annotations[lang][app.getSessionAttribute('annId')];
                     if (hasProp(ann, 'hasMap')) {
                         const title = ann.name;
-                        webshot(ann.hasMap, '../images/'+title+'.jpg', function(err) {
-                            if(err){
+                        webshot(ann.hasMap, `../images/${title}.jpg`, (err) => {
+                            if (err) {
                                 app.ask(strings.no_map[lang]);
-                            }else{
-                                app.showImageCard(title, ann.hasMap,ngrok+title+'.jpg').ask(strings.map[lang]);
+                            } else {
+                                app.showImageCard(title, ann.hasMap, `${ngrok + title}.jpg`).ask(strings.map[lang]);
                             }
                         });
-
-
                     } else {
                         app.ask(strings.no_map[lang]);
                     }
