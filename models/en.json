@@ -10,6 +10,54 @@
         "samples": []
       },
       {
+        "name": "AMAZON.MoreIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NavigateSettingsIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NextIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PageUpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PauseIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PreviousIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ResumeIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollDownIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollLeftIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollRightIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ScrollUpIntent",
+        "samples": []
+      },
+      {
         "name": "AMAZON.StopIntent",
         "samples": []
       },
@@ -25,10 +73,115 @@
         "slots": []
       },
       {
+        "name": "ContactIntent",
+        "samples": [
+          "How can i contact the owners",
+          "is there a phone number",
+          "give me the phone number"
+        ],
+        "slots": []
+      },
+      {
+        "name": "DifficultyIntent",
+        "samples": [
+          "How difficult is that route",
+          "How difficult is that hiking route",
+          "Whats the difficulty of that hiking trail",
+          "Whats the difficulty setting of that hiking route"
+        ],
+        "slots": []
+      },
+      {
+        "name": "DifficultySearchIntent",
+        "samples": [
+          "Find a hiking route that takes {Duration}",
+          "Give me a hiking route that takes {Duration}"
+        ],
+        "slots": [
+          {
+            "name": "Duration",
+            "type": "AMAZON.DURATION"
+          }
+        ]
+      },
+      {
+        "name": "ImageIntent",
+        "samples": [
+          "Do you have pictures for that route",
+          "do you have pictures for tha hiking trail",
+          "can you send me pictures",
+          "can you send me images"
+        ],
+        "slots": []
+      },
+      {
+        "name": "LengthIntent",
+        "samples": [
+          "How long is that hiking trail",
+          "how long is that route",
+          "how long takes that trail",
+          "how long is that hiking route"
+        ],
+        "slots": []
+      },
+      {
+        "name": "MapIntent",
+        "samples": [
+          "Show me a map",
+          "Send me a map",
+          "Send me the map to my phone"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NearIntent",
+        "samples": [
+          "Whats the next hiking trail",
+          "What is the next hiking route",
+          "What is the nearest route"
+        ],
+        "slots": []
+      },
+      {
         "name": "RandomHikingIntent",
         "samples": [
           "Give me a random hiking route",
           "Give me a random hiking"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NeartoIntent",
+        "samples": [
+          "Search fo hiking routes near {name}",
+          "Search for hiking trails next to {name}",
+          "Search for trails in the vicinity of {name}"
+        ],
+        "slots": [
+          {
+            "name": "name",
+            "type": "AMAZON.AT_CITY"
+          }
+        ]
+      },
+      {
+        "name": "SendInformationIntent",
+        "samples": [
+          "Send me information to my phone",
+          "Send me information for that hiking route to my phone",
+          "Send me information for that hiking trail to my app",
+          "send it to my app",
+          "send it to my phone",
+          "send it to me"
+        ],
+        "slots": []
+      },
+      {
+        "name": "TimeIntent",
+        "samples": [
+          "How long does this route take",
+          "how long is that hiking trail",
+          "how long do i need for that hiking route"
         ],
         "slots": []
       },

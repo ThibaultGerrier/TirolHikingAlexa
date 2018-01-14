@@ -3,10 +3,18 @@ const Fetcher = require('./fetcher');
 const app = require('jovo-framework').Jovo;
 const htmlToText = require('html-to-text');
 
-let annotations;
-const seefeldData = new Fetcher('seefeld', 'de', () => {
-    const mayrhofenData = new Fetcher('mayrhofen_gdi', 'de', () => {
-        annotations = Object.assign(seefeldData.annotations, mayrhofenData.annotations);
+const strings = require('../models/localizedStrings');
+
+const annotations = {};
+const seefeldDataDE = new Fetcher('seefeld', 'de', () => {
+    const mayrhofenDataDE = new Fetcher('mayrhofen_gdi', 'de', () => {
+        annotations.de = Object.assign(seefeldDataDE.annotations, mayrhofenDataDE.annotations);
+    });
+});
+
+const seefeldDataEN = new Fetcher('seefeld', 'en', () => {
+    const mayrhofenDataEN = new Fetcher('mayrhofen_gdi', 'en', () => {
+        annotations.en = Object.assign(seefeldDataEN.annotations, mayrhofenDataEN.annotations);
     });
 });
 
@@ -33,243 +41,183 @@ const getFeature = (obj, featureId) => {
     return null;
 };
 
-const searchDurationRoute = (hours, minutes) => {
-    const result = [];
-    let duration=0;
-    if(hours){
-        duration=duration+Number(hours);
-    }
-    if(minutes){
-        duration=duration+Number((minutes/60)*100);
-    }
-    Object.values(annotations).forEach(function (ann){
-        const value = getFeature(ann, 'time_total');
-        if (value) {
-            if (value.toString()===duration.toString()){
-                result.push(ann);
-            }
+class Handler {
+    searchDurationRoute(hours, minutes){
+        const result = [];
+        let duration = 0;
+        if (hours) {
+            duration += Number(hours);
         }
-    })
-    return result;
-};
-
-const handlersEN = {
-    LAUNCH() {
-        app.toIntent('WelcomeIntent');
-    },
-    WelcomeIntent() {
-        console.log();
-        app.tell('Welcome to Hiking in tyrol');
-    },
-    HelloWorldIntent() {
-        app.tell('Hello World Intent!');
-    },
-    RandomHikingIntent() {
-        const ann = Object.values(annotations)[randNumber(Object.keys(annotations).length)];
-        app.setSessionAttribute('annId', ann.id);
-        app.followUpState('SelectedHiking');
-        app.ask(`Your random hiking route is: ${ann.name}`);
-        console.log(ann.name)
-    },
-    SelectedHiking: {
-        ContactIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if (hasProp(ann, 'contactPoint') && hasProp(ann.contactPoint, 'telephone')) {
-                /** @namespace ann.contactPoint.telephone */
-                app.ask(`The telephone number is ${ann.contactPoint.telephone}`);
-            } else {
-                app.ask('The hiking trail doesn\'t have a telephone number');
-            }
-        },
-        DifficultyIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            const difficultyValue = getFeature(ann, 'difficulty');
-            if (difficultyValue) {
-                app.ask(`The hiking trail has the difficulty ${difficultyValue}`);
-            } else {
-                app.ask('The hiking trail doesn\'t have a specified difficulty');
-            }
-        },
-        ImageIntent() {
-            // send an image
-            app.tell('ImageIntent!');
-        },
-        LengthIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if (hasProp(ann, 'potentialAction') && hasProp(ann.potentialAction, 'distance')) {
-                /** @namespace ann.potentialAction.distance */
-                app.ask(`The hiking trail is ${ann.potentialAction.distance} long`);
-            } else {
-                app.ask('The hiking trail doesn\'t have a specified length');
-            }
-        },
-        TimeIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
+        if (minutes) {
+            duration += Number((minutes / 60) * 100);
+        }
+        Object.values(annotations[this.lang]).forEach((ann) => {
             const value = getFeature(ann, 'time_total');
             if (value) {
-                app.ask(`The hiking trail takes ${value} hours`);
-            } else {
-                app.ask('The hiking trail doesn\'t have a specified duration');
-            }
-        },
-    },
-        END() {
-            app.tell('bye');
-        },
-};
-
-const handlersDE = {
-    LAUNCH() {
-        app.toIntent('WelcomeIntent');
-    },
-    WelcomeIntent() {
-        console.log();
-        app.tell('Willkommen zu Wandern in Tirol');
-    },
-    HelpIntent() {
-        console.log();
-        app.tell('Willkommen zu Wandern in Tirol, wenn du eine zufällige wanderroute haben willst, frag: gib mir eine zufällige wanderroute');
-    },
-    NeartoIntent() {
-        //TODO
-    },
-    DifficultySearchIntent(duration) {
-        duration=duration.replace("PT","");
-        let hours=duration.split("H",1)
-        duration=duration.substring(duration.indexOf("H") + 1);
-        let minutes=duration.split("M",1)
-        let result= searchDurationRoute(hours,minutes);
-        if(result.length===0){
-            app.ask('Es wurde leider keine Wanderung gefunden, die ' + hours+"Stunden und "+minutes+"Minuten geht. Bitte wähle eine andere Zeit")
-        }else{
-            app.setSessionAttribute('annId', result[0].identifier);
-            app.followUpState('SelectedHiking');
-            app.ask('Es wurden '+result.length+' Wanderungen gefunden. Eine davon ist:'+result[0].name+". Du kannst jetzt nach mehr Informationen zu dieser Wanderroute fragen.")
-        }
-
-    },
-    HelloWorldIntent() {
-        app.tell('Hello World Intent!');
-    },
-    RandomHikingIntent() {
-        const ann = Object.values(seefeldData.annotations)[randNumber(Object.keys(seefeldData.annotations).length)];
-        app.setSessionAttribute('annId', ann.identifier);
-        app.followUpState('SelectedHiking');
-        app.ask(`Deine zufällige Wanderroute ist: ${ann.name}. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?`)
-    },
-    SelectedHiking: {
-        ContactIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if (hasProp(ann, 'contactPoint') && hasProp(ann.contactPoint, 'telephone')) {
-                /** @namespace ann.contactPoint.telephone */
-                app.ask(`Die Telefonnummer ist ${ann.contactPoint.telephone}. Was möchtest du  noch wissen?`);
-            } else {
-                app.ask('Diese Wanderroute hat leider keine Telefonnummer! Was möchtest du  noch wissen?');
-            }
-        },
-        DifficultyIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            const difficultyValue = getFeature(ann, 'difficulty');
-            if (difficultyValue) {
-                app.ask(`Die Wanderroute hat den Schwierigkeitsgrad ${difficultyValue}. Was möchtest du  noch wissen?`);
-            } else {
-                app.ask('Die Wanderroute hat leider keinen Schwierigkeitsgrad! Was möchtest du  noch wissen?');
-            }
-        },
-        ImageIntent() {
-            // send card with image
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if(hasProp(ann, 'image')){
-                let title = ann.name;
-                let content = "Ein Bild zu dieser Wanderroute";
-                let imageUrl;
-                if(ann.image.length===undefined){
-                    imageUrl=ann.image.contentUrl
-                }else{
-                    imageUrl=ann.image[0].contentUrl
+                if (value.toString() === duration.toString()) {
+                    result.push(ann);
                 }
-                app.showImageCard(title,content,imageUrl).ask('Ich habe ein Bild an deine Alexa App geschickt. Was möchtest du noch wissen?');
-            }else{
-                app.ask('Leider habe ich für diese Wanderroute kein Bild. Was möchtest du noch wissen?')
             }
+        });
+        return result;
+    }
 
-        },
-        SendInformationIntent() {
-            // send card with data
-            const ann = annotations[app.getSessionAttribute('annId')];
-            let title = ann.name;
-            let content="";
-            const difficultyValue = getFeature(ann, 'difficulty');
-            if (difficultyValue) {
-                content=content+'Schwierigkeit: '+difficultyValue+'\n\n';
-            }
-            if (hasProp(ann, 'potentialAction') && hasProp(ann.potentialAction, 'distance')) {
-                content=content+'Länge: '+ann.potentialAction.distance.replace('.', ',')+'\n\n';
-            }
-            const value = getFeature(ann, 'time_total').toString();
-            if (value) {
-                content=content+'Zeit: '+value+'h\n\n';
-            }
-            if(hasProp(ann,'description')){
-                content=content+'Beschreibung:\n'+htmlToText.fromString(ann.description)+'\n\n';
-            }
-
-            console.log(content)
-            if(hasProp(ann, 'image')){
-                let imageUrl;
-                if(ann.image.length===undefined){
-                    imageUrl=ann.image.contentUrl
-                }else{
-                    imageUrl=ann.image[0].contentUrl
+    constructor(lang) {
+        this.lang = lang;
+        this.handler = {
+            LAUNCH() {
+                app.toIntent('WelcomeIntent');
+            },
+            HelloWorldIntent() {
+                app.tell('Hello World Intent!');
+            },
+            WelcomeIntent() {
+                console.log();
+                app.tell(strings.welcome_message[lang]);
+            },
+            HelpIntent() {
+                console.log();
+                app.tell(strings.help.de);
+            },
+            NeartoIntent() {
+                // TODO
+            },
+            DifficultySearchIntent(duration) {
+                let dur = duration;
+                dur = dur.replace('PT', '');
+                const hours = dur.split('H', 1);
+                dur = dur.substring(dur.indexOf('H') + 1);
+                const minutes = dur.split('M', 1);
+                const result = this.searchDurationRoute(hours, minutes);
+                if (result.length === 0) {
+                    app.ask(strings.dif_search_dur_not_found[lang].replace('$hours', hours).replace('$minutes', minutes));
+                } else {
+                    app.setSessionAttribute('annId', result[0].identifier);
+                    app.followUpState('SelectedHiking');
+                    app.ask(strings.dif_search_res[lang].replace('$length', result.length).replace('$name', result[0].name));
                 }
-                app.showImageCard(title,content,imageUrl).ask('Ich habe die Informationen an deine Alexa app geschickt. Was möchtest du noch wissen?');
-            }else{
-                app.showSimpleCard(title, content).ask('Ich habe die Informationen an deine Alexa app geschickt. Was möchtest du noch wissen?');
-            }
+            },
+            RandomHikingIntent() {
+                const ann = Object.values(annotations[lang])[randNumber(Object.keys(annotations[lang]).length)];
+                app.setSessionAttribute('annId', ann.identifier);
+                app.followUpState('SelectedHiking');
+                app.ask(strings.rand_hiking[lang].replace('$name', ann.name));
+            },
+            SelectedHiking: {
+                ContactIntent() {
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    if (hasProp(ann, 'contactPoint') && hasProp(ann.contactPoint, 'telephone')) {
+                        /** @namespace ann.contactPoint.telephone */
+                        app.ask(strings.tel_num[lang].replace('$telephone', ann.contactPoint.telephone));
+                    } else {
+                        app.ask(strings.no_tel_num[lang]);
+                    }
+                },
+                DifficultyIntent() {
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    const difficultyValue = getFeature(ann, 'difficulty');
+                    if (difficultyValue) {
+                        app.ask(strings.dif[lang].replace('$difficulty', difficultyValue));
+                    } else {
+                        app.ask(strings.no_dif[lang]);
+                    }
+                },
+                ImageIntent() {
+                    // send card with image
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    if (hasProp(ann, 'image')) {
+                        const title = ann.name;
+                        const content = strings.image_to_route[lang];
+                        let imageUrl;
+                        if (ann.image.length === undefined) {
+                            imageUrl = ann.image.contentUrl;
+                        } else {
+                            imageUrl = ann.image[0].contentUrl;
+                        }
+                        app.showImageCard(title, content, imageUrl).ask(strings.send_image_to_route[lang]);
+                    } else {
+                        app.ask(strings.no_image_to_route[lang]);
+                    }
+                },
+                SendInformationIntent() {
+                    // send card with data
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    const title = ann.name;
+                    let content = '';
+                    const difficultyValue = getFeature(ann, 'difficulty');
+                    if (difficultyValue) {
+                        content = `${content}${strings.dif_word[lang]}: ${difficultyValue}\n\n`;
+                    }
+                    if (hasProp(ann, 'potentialAction') && hasProp(ann.potentialAction, 'distance')) {
+                        content = `${content}${strings.length_word[lang]}: ${ann.potentialAction.distance.replace('.', ',')}\n\n`;
+                    }
+                    const value = getFeature(ann, 'time_total').toString();
+                    if (value) {
+                        content = `${content}${strings.time_word[lang]}: ${value}h\n\n`;
+                    }
+                    if (hasProp(ann, 'description')) {
+                        content = `${content}${strings.description_word_word[lang]}: \n${htmlToText.fromString(ann.description)}\n\n`;
+                    }
 
-        },
-        LengthIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if (hasProp(ann, 'potentialAction') && hasProp(ann.potentialAction, 'distance')) {
-                /** @namespace ann.potentialAction.distance */
-                app.ask(`Die Wanderroute ist ${ann.potentialAction.distance.replace('.', ',')} lang.  Was möchtest du  noch wissen?`);
-            } else {
-                app.ask('Die Wanderroute hat leider keine Längenangaben! Was möchtest du  noch wissen?');
-            }
-        },
-        TimeIntent() {
-            const ann = annotations[app.getSessionAttribute('annId')];
-            const value = getFeature(ann, 'time_total').toString();
-            if (value) {
-                app.ask(`Die Wanderroute dauert ${value.replace('.', ',')} Stunden.  Was möchtest du  noch wissen?`);
-            } else {
-                app.ask('Die Wanderroute hat leider keine Zeitangabe  Was möchtest du  noch wissen?');
-            }
-        },
-        MapIntent() {
-            //TODO ? not possible to shown the map, and no clickable links
-            const ann = annotations[app.getSessionAttribute('annId')];
-            if (hasProp(ann, 'hasMap')){
-                let title = ann.name;
-                app.showSimpleCard(title,ann.hasMap).ask('Ich habe die Informationen an deine Alexa app geschickt. Was möchtest du noch wissen?');
-            } else {
-                app.ask('Die Wanderroute hat leider keine Karte.  Was möchtest du  noch wissen?');
-            }
-        },
-    },
-    Unhandled() {
-        let speech = 'Du musst erst eine Wanderung auswählen.';
-        let reprompt = 'Was möchtest du tun?';
-        app.ask(speech, reprompt);
-    },
+                    console.log(content);
+                    if (hasProp(ann, 'image')) {
+                        let imageUrl;
+                        if (ann.image.length === undefined) {
+                            imageUrl = ann.image.contentUrl;
+                        } else {
+                            imageUrl = ann.image[0].contentUrl;
+                        }
+                        app.showImageCard(title, content, imageUrl);
+                    } else {
+                        app.showSimpleCard(title, content);
+                    }
+                    app.ask(strings.send_img_card[lang]);
+                },
+                LengthIntent() {
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    if (hasProp(ann, 'potentialAction') && hasProp(ann.potentialAction, 'distance')) {
+                        /** @namespace ann.potentialAction.distance */
+                        let { distance } = ann.potentialAction;
+                        if (lang === 'de') {
+                            distance = distance.replace('.', ',');
+                        }
+                        app.ask(strings.length[lang].replace('$distance', distance));
+                    } else {
+                        app.ask(strings.no_length[lang]);
+                    }
+                },
+                TimeIntent() {
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    const value = getFeature(ann, 'time_total').toString();
+                    if (value) {
+                        app.ask(strings.length[lang].replace('$distance', value.replace('.', ',')));
+                    } else {
+                        app.ask(strings.no_time[lang]);
+                    }
+                },
+                MapIntent() {
+                    // TODO ? not possible to shown the map, and no clickable links
+                    const ann = annotations[lang][app.getSessionAttribute('annId')];
+                    if (hasProp(ann, 'hasMap')) {
+                        const title = ann.name;
+                        app.showSimpleCard(title, ann.hasMap).ask(strings.map[lang]);
+                    } else {
+                        app.ask(strings.no_map[lang]);
+                    }
+                },
+            },
+            Unhandled() {
+                const speech = strings.unhandled_1[lang];
+                const reprompt = strings.unhandled_2[lang];
+                app.ask(speech, reprompt);
+            },
 
-    END() {
-        app.tell('Auf wiedersehen!');
-    },
+            END() {
+                app.tell(strings.bye[lang]);
+            },
 
-};
+        };
+    }
+}
 
-module.exports = {
-    handlersEN,
-    handlersDE,
-};
+module.exports = Handler;

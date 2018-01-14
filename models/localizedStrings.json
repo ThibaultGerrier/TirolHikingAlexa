@@ -1,0 +1,106 @@
+{
+  "welcome_message":{
+    "de": "Willkommen zu Wandern in Tirol",
+    "en": "Welcome to Hiking in tyrol"
+  },
+  "help": {
+    "de": "Willkommen zu Wandern in Tirol, wenn du eine zufällige wanderroute haben willst, frag: gib mir eine zufällige wanderroute",
+    "en": "Welcome to Hiking in tyrol, if you want a random hiking route, just ask: give me a random hiking route"
+  },
+  "dif_search_dur_not_found": {
+    "de": "Es wurde leider keine Wanderung gefunden, die $hours Stunden und $minutes Minuten geht. Bitte wähle eine andere Zeit",
+    "en": "Unfortunately no hiking route has been found, that takes $hours hours and $minutes minutes. Please choose another time"
+  },
+  "dif_search_res": {
+    "de": "Es wurden $length Wanderungen gefunden. Eine davon ist: $name. Du kannst jetzt nach mehr Informationen zu dieser Wanderroute fragen.",
+    "en": "No hiking routes with length $length have been found. One of those is $name. You can now ask for more informations to that hiking route."
+  },
+  "rand_hiking": {
+    "de": "Deine zufällige Wanderroute ist: $name. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?",
+    "en": "Your random hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
+  },
+  "tel_num":{
+    "de": "Die Telefonnummer ist $telephone. Was möchtest du noch wissen?",
+    "en": "The telephone numer is $telephone. What do you want to know?"
+  },
+  "no_tel_num":{
+    "de": "Diese Wanderroute hat leider keine Telefonnummer! Was möchtest du noch wissen?",
+    "en": "Unfortunately the hiking route doesn't have a phone number! What do you want to know?"
+  },
+  "dif":{
+    "de": "Die Wanderroute hat den Schwierigkeitsgrad $difficulty. Was möchtest du  noch wissen?",
+    "en": "The hiking route has the difficulty $difficulty. What do you want to know?"
+  },
+  "no_dif": {
+    "de": "Die Wanderroute hat leider keinen Schwierigkeitsgrad! Was möchtest du  noch wissen?",
+    "en": "Unfortunately the hiking route doesn't have an attributed difficulty setting. What do you want to know?"
+  },
+  "image_to_route": {
+    "de": "Ein Bild zu dieser Wanderroute",
+    "en": "An image to that hiking route"
+  },
+  "send_image_to_route": {
+    "de": "Ich habe ein Bild an deine Alexa App geschickt. Was möchtest du noch wissen?",
+    "en": "I have send the Image to your alexa app. What do you want to know"
+  },
+  "no_image_to_route": {
+    "de": "Leider habe ich für diese Wanderroute kein Bild. Was möchtest du noch wissen?",
+    "en": "Unfortunately i don't have any image for that hiking route. What do you want to know?"
+  },
+  "dif_word":{
+    "de": "Schwierigkeit",
+    "en": "Difficilty"
+  },
+  "length_word":{
+    "de": "Länge",
+    "en": "Length"
+  },
+  "time_word":{
+    "de": "Zeit",
+    "en": "Time"
+  },
+  "description_word":{
+    "de": "Beschreibung",
+    "en": "Description"
+  },
+  "send_img_card": {
+    "de": "Ich habe die Informationen an deine Alexa app geschickt. Was möchtest du noch wissen?",
+    "en": "I have send the information to your alexa app. What do you want to know?"
+  },
+  "length": {
+    "de": "Die Wanderroute ist $distance lang. Was möchtest du noch wissen?",
+    "en": "The hiking route is $distance long. What do you want to know?"
+  },
+  "no_length": {
+    "de": "Die Wanderroute hat leider keine Längenangaben! Was möchtest du noch wissen?",
+    "en": "Unfortunately the hiking route doesn't have any length attributed. What do you want to know"
+  },
+  "time": {
+    "de": "Die Wanderroute dauert $time Stunden. Was möchtest du noch wissen?",
+    "en": "The hiking route takes $time hours. What do you want to know?"
+  },
+  "no_time": {
+    "de": "Die Wanderroute hat leider keine Zeitangabe. Was möchtest du noch wissen?",
+    "en": "The hiking route unfortunately doesn't have an attributed time. What do you want to know?"
+  },
+  "map": {
+    "de": "Ich habe die Informationen an deine Alexa app geschickt. Was möchtest du noch wissen?",
+    "en": "I have send the information to your alexa app. What do you want to know?"
+  },
+  "no_map": {
+    "de": "Die Wanderroute hat leider keine Karte. Was möchtest du noch wissen?",
+    "en": "The hiking route doesn't have a map attributed. What do you want to do?"
+  },
+  "unhandled_1": {
+    "de": "Du musst erst eine Wanderung auswählen.",
+    "en": "You first need to choose a hiking route"
+  },
+  "unhandled_2": {
+    "de": "Was möchtest du tun?",
+    "en": "What do you want to do?"
+  },
+  "bye": {
+    "de": "Auf wiedersehen!",
+    "en": "Good bye!"
+  }
+}
