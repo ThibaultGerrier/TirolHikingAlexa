@@ -8,8 +8,8 @@
     "en": "Welcome to Hiking in tyrol, if you want a random hiking route, just ask: give me a random hiking route"
   },
   "dif_search_dur_not_found": {
-    "de": "Es wurde leider keine Wanderung gefunden, die $hours Stunden und $minutes Minuten geht. Bitte wähle eine andere Zeit",
-    "en": "Unfortunately no hiking route has been found, that takes $hours hours and $minutes minutes. Please choose another time"
+    "de": "Es wurde leider keine Wanderung gefunden, die $duration Stunden geht. Bitte wähle eine andere Zeit",
+    "en": "Unfortunately no hiking route has been found, that takes $duration hours. Please choose another time"
   },
   "dif_search_res": {
     "de": "Es wurden $length Wanderungen gefunden. Eine davon ist: $name. Du kannst jetzt nach mehr Informationen zu dieser Wanderroute fragen.",
@@ -18,6 +18,10 @@
   "rand_hiking": {
     "de": "Deine zufällige Wanderroute ist: $name. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?",
     "en": "Your random hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
+  },
+  "selected_hiking": {
+    "de": "Deine  Wanderroute ist: $name. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?",
+    "en": "Your  hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
   },
   "tel_num":{
     "de": "Die Telefonnummer ist $telephone. Was möchtest du noch wissen?",
@@ -122,5 +126,9 @@
   "nearest_trail": {
     "de": "Der nächst gelegene Wanderweg mit $distance kilometer entfernung ist $name",
     "en": "The next hiking trail with a distance of $distance kilometer is $name"
+  },
+  "many_routes": {
+    "de": "Ich habe das hier gefunden: $names. Sag die Nummer der Route, über die du mehr erfahren willst.",
+    "en": "I found $distance kilometer is $names. Tell me the number of the route you want to know more about."
   }
 }

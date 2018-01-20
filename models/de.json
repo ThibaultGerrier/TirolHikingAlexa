@@ -2591,11 +2591,39 @@
         "slots": []
       },
       {
-        "name": "DifficultySearchIntent",
+        "name": "DurationSearchIntentBigger",
         "samples": [
-          "Finde eine Wanderung die {Duration} lang geht",
-          "Gib mir eine Wanderung die {Duration}  dauert.",
-          "Suche einen Wanderweg der {Duration} dauert."
+          "Finde eine Wanderung die länger {Duration} lang geht",
+          "Gib mir eine Wanderung die mehr {Duration}  dauert.",
+          "Suche einen Wanderweg der länger als {Duration} dauert."
+        ],
+        "slots": [
+          {
+            "name": "Duration",
+            "type": "AMAZON.DURATION"
+          }
+        ]
+      },
+      {
+        "name": "DurationSearchIntentEqual",
+        "samples": [
+          "Finde eine Wanderung die genau {Duration} lang geht",
+          "Gib mir eine Wanderung die exakt {Duration} dauert.",
+          "Suche einen Wanderweg der genau {Duration} dauert."
+        ],
+        "slots": [
+          {
+            "name": "Duration",
+            "type": "AMAZON.DURATION"
+          }
+        ]
+      },
+      {
+        "name": "DurationSearchIntentSmaller",
+        "samples": [
+          "Finde eine Wanderung die kürzer als {Duration} lang geht",
+          "Gib mir eine Wanderung die weniger als {Duration}  dauert.",
+          "Suche einen Wanderweg der weniger als {Duration} dauert."
         ],
         "slots": [
           {
@@ -2664,6 +2692,20 @@
           {
             "name": "name",
             "type": "AMAZON.AT_CITY"
+          }
+        ]
+      },
+      {
+        "name": "NumberIntent",
+        "samples": [
+          "{number}",
+          "gib mir nummer {number}",
+          "nummer {number}"
+        ],
+        "slots": [
+          {
+            "name": "number",
+            "type": "AMAZON.NUMBER"
           }
         ]
       },
