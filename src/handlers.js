@@ -13,11 +13,20 @@ const url = 'mongodb://localhost:27017';
 const dbName = 'hikingAlexa';
 
 const ngrok = 'http://c2b588bf.ngrok.io/image/?image='; // TODO Update server url
-const readResults = 5;
+const readResults = 3;
 
 const googleMapsClient = googleMaps.createClient({
     key: keys.googleApiKey,
 });
+
+const fuseOptions = {
+    shouldSort: true,
+    threshold: 0.6,
+    location: 0,
+    distance: 100,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+};
 
 const annotations = {
     de: {},
@@ -36,13 +45,13 @@ MongoClient.connect(url, (err, client) => {
         findDeDocs.forEach((ann) => {
             annotations.de[ann.identifier] = ann;
         });
-        console.log('got de ann');
+        console.log('got de ann', Object.keys(annotations.de).length);
     });
     collectionEn.find({}).toArray((findENErr, findEnDocs) => {
         findEnDocs.forEach((ann) => {
             annotations.en[ann.identifier] = ann;
         });
-        console.log('got en ann');
+        console.log('got en ann', Object.keys(annotations.en).length);
     });
 });
 
@@ -321,7 +330,6 @@ class Handler {
                     app.ask(strings.many_routes[lang].replace('$names', text));
                 }
             },
-
             RandomHikingIntent() {
                 const ann = Object.values(annotations[lang])[randNumber(Object.keys(annotations[lang]).length)];
                 app.setSessionAttribute('annId', ann.identifier);
@@ -343,11 +351,78 @@ class Handler {
                     }
                 }
             },
+            SearchDifficultyIntent(difficulty) {
+                if (difficulty) {
+                    let diffs;
+                    switch (lang) {
+                    case 'de':
+                        diffs = ['leicht', 'mittel', 'schwierig'];
+                        break;
+                    case 'en':
+                        diffs = ['easy', 'average medium', 'hard'];
+                        break;
+                    default:
+                        diffs = ['leicht', 'mittel', 'schwierig'];
+                    }
+                    const fuse = new Fuse(diffs, fuseOptions);
+                    const fuseRes = fuse.search(difficulty); // 0, 1, 2
+                    if (fuseRes.length !== 0) {
+                        const whichDiff = fuseRes[0];
+                        const matchingPlaces = [];
+                        Object.values(annotations[lang]).forEach((ann) => {
+                            const diff = getFeature(ann, 'difficulty');
+                            if (diff) {
+                                if ((diff.includes('leicht') || diff.includes('easy')) && whichDiff === 0) {
+                                    matchingPlaces.push(ann);
+                                }
+                                if ((diff.includes('mittel') || diff.includes('average')) && whichDiff === 1) {
+                                    matchingPlaces.push(ann);
+                                }
+                                if (((diff.includes('schwierig') && !diff.includes('mittel')) || diff.includes('hard')) && whichDiff === 2) {
+                                    matchingPlaces.push(ann);
+                                }
+                            }
+                        });
+                        const names = matchingPlaces.slice(0, readResults).map(ann => ann.name).join(', ');
+                        app.setSessionAttribute('manyRoutesId', matchingPlaces.slice(0, readResults).map(ann => ann.identifier));
+                        app.followUpState('ManyResults');
+                        app.ask(strings.found_diff[lang]
+                            .replace('$num', matchingPlaces.length)
+                            .replace('$difficulty', getFeature(matchingPlaces[0], 'difficulty'))
+                            .replace('$i', readResults.toString())
+                            .replace('$names', names));
+                    } else {
+                        app.ask(strings.unknown_diff[lang]);
+                    }
+                } else {
+                    app.ask(strings.unknown_diff[lang]);
+                }
+            },
             ManyResults: {
                 NumberIntent(number) {
+                    console.log('num', number);
                     app.setSessionAttribute('annId', app.getSessionAttribute('manyRoutes')[number - 1]);
                     app.followUpState('SelectedHiking');
                     app.ask(strings.selected_hiking[lang].replace('$name', annotations[lang][app.getSessionAttribute('manyRoutes')[number - 1]].name));
+                },
+                NameIntent(routeName) {
+                    if (routeName) {
+                        const ann = [];
+                        app.getSessionAttribute('manyRoutesId').forEach((id) => {
+                            ann.push(annotations[lang][id]);
+                        });
+                        const fuse = new Fuse(ann.map(a => a.name), fuseOptions);
+                        const res = fuse.search(routeName);
+                        if (res.length !== 0) {
+                            app.setSessionAttribute('annId', ann[res[0]].identifier);
+                            app.followUpState('SelectedHiking');
+                            app.ask(strings.selected_hiking[lang].replace('$name', ann[res[0]].name));
+                        } else {
+                            app.ask(strings.no_name[lang]);
+                        }
+                    } else {
+                        app.ask(strings.no_name[lang]);
+                    }
                 },
             },
             SelectedHiking: {

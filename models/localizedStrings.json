@@ -20,8 +20,8 @@
     "en": "Your random hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
   },
   "selected_hiking": {
-    "de": "Deine  Wanderroute ist: $name. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?",
-    "en": "Your  hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
+    "de": "Deine ausgesuchte Wanderroute ist: $name. Du kannst jetzt nach Informationen zu dieser route, oder nach etwas anderem fragen. Was möchtest du wissen?",
+    "en": "Your selected hiking route is: $name. You can now ask for information to that route or ask for something different. What do you want to know?"
   },
   "tel_num":{
     "de": "Die Telefonnummer ist $telephone. Was möchtest du noch wissen?",
@@ -130,5 +130,13 @@
   "many_routes": {
     "de": "Ich habe das hier gefunden: $names. Sag die Nummer der Route, über die du mehr erfahren willst.",
     "en": "I found $distance kilometer is $names. Tell me the number of the route you want to know more about."
+  },
+  "unknown_diff": {
+    "de": "Leider kenn ich diesen Schwierigkeitsgrad nicht",
+    "en": "Unfortunately i could'nt understand the difficulty"
+  },
+  "found_diff": {
+    "de": "Ich habe $num wanderungen mit dem Schwierigkeitsgrad $difficulty gefunden, die ersten $i sind: $names",
+    "en": "I found $num hiking trails with the difficulty setting $difficulty, the first $i are: $names"
   }
 }

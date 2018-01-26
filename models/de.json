@@ -2,6 +2,47 @@
   "languageModel": {
     "types": [
       {
+        "name": "DIFFICULTY",
+        "values": [
+          {
+            "id": "easy",
+            "name": {
+              "value": "leicht",
+              "synonyms": [
+                "sehr leicht",
+                "leichten",
+                "leichter",
+                "sehr leichten",
+                "leichte"
+              ]
+            }
+          },
+          {
+            "id": "medium",
+            "name": {
+              "value": "mittel",
+              "synonyms": [
+                "mittelschwierig",
+                "mittlerer"
+              ]
+            }
+          },
+          {
+            "id": "very",
+            "name": {
+              "value": "schwer",
+              "synonyms": [
+                "schwierig",
+                "sehr schwer",
+                "sehr schwierig",
+                "schwerer",
+                "sehr schweren"
+              ]
+            }
+          }
+        ]
+      },
+      {
         "name": "ROUTE_NAME",
         "values": [
           {
@@ -2673,6 +2714,20 @@
         "slots": []
       },
       {
+        "name": "NameIntent",
+        "samples": [
+          "Wanderroute {routeName}",
+          "Wanderung {routeName}",
+          "route {routeName} "
+        ],
+        "slots": [
+          {
+            "name": "routeName",
+            "type": "ROUTE_NAME"
+          }
+        ]
+      },
+      {
         "name": "NearIntent",
         "samples": [
           "Was ist die näheste Wanderroute",
@@ -2698,7 +2753,6 @@
       {
         "name": "NumberIntent",
         "samples": [
-          "{number}",
           "gib mir nummer {number}",
           "nummer {number}"
         ],
@@ -2716,6 +2770,38 @@
           "Gib mir einen zufälligen wanderweg"
         ],
         "slots": []
+      },
+      {
+        "name": "SearchDifficultyIntent",
+        "samples": [
+          "Ich suche einen {difficulty} wanderweg",
+          "ich suche ein {difficulty} wanderroute",
+          "ich bin auf der suche nach einer {difficulty} wanderroute",
+          "ich bin auf der suche nach einem {difficulty} wanderweg",
+          "ich suche ein {difficulty} wanderweg",
+          "Ich suche einen {difficulty} wanderung"
+        ],
+        "slots": [
+          {
+            "name": "difficulty",
+            "type": "DIFFICULTY"
+          }
+        ]
+      },
+      {
+        "name": "SearchNameIntent",
+        "samples": [
+          "Suche {nameRoute}",
+          "Suche nach {nameRoute}",
+          "Suche nach der Route mit dem namen {nameRoute}",
+          "Suche den Wanderweg {nameRoute}"
+        ],
+        "slots": [
+          {
+            "name": "nameRoute",
+            "type": "ROUTE_NAME"
+          }
+        ]
       },
       {
         "name": "SendInformationIntent",
@@ -2747,5 +2833,61 @@
       }
     ],
     "invocationName": "wandern in tirol"
+  },
+  "prompts": [
+    {
+      "id": "Elicit.Intent-NameIntent.IntentSlot-routeName",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "ich kenne diese wanderung leider nicht"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-SearchDifficultyIntent.IntentSlot-difficulty",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "ich kenne diese schwierigkeit nicht"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "intents": [
+      {
+        "name": "NameIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "routeName",
+            "type": "ROUTE_NAME",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-NameIntent.IntentSlot-routeName"
+            }
+          }
+        ]
+      },
+      {
+        "name": "SearchDifficultyIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "difficulty",
+            "type": "DIFFICULTY",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-SearchDifficultyIntent.IntentSlot-difficulty"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
