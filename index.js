@@ -6,8 +6,6 @@ const app = require('jovo-framework').Jovo;
 const webhook = require('jovo-framework').Webhook;
 const Handler = require('./src/handlers');
 const fs = require('fs');
-const path = require('path');
-
 
 // Listen for post requests
 webhook.listen(8008, () => {

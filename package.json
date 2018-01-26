@@ -10,6 +10,7 @@
     "geolib": "^2.0.24",
     "html-to-text": "^3.3.0",
     "jovo-framework": "<=1.0.0",
+    "mongodb": "^3.0.1",
     "request": "latest",
     "webshot": "^0.18.0"
   },
