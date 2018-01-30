@@ -129,9 +129,6 @@ const searchDurationRoute = (durationtime, lang, equal) => {
     default:
         console.log('no case found');
     }
-    result.forEach((a) => {
-        console.log(getFeature(a, 'time_total').toString());
-    });
     return result;
 };
 
@@ -255,7 +252,7 @@ class Handler {
             DurationSearchIntentBigger(duration) {
                 const result = searchDurationRoute(duration, lang, 'bigger');
                 if (result.length === 0) {
-                    app.ask(strings.dif_search_dur_not_found[lang].replace('$hours', hours).replace('$minutes', minutes));
+                    app.ask(strings.dif_search_dur_not_found[lang].replace('$duration', duration));
                 } else if (result.length === 1) {
                     app.setSessionAttribute('annId', result[0].identifier);
                     app.followUpState('SelectedHiking');
@@ -266,6 +263,7 @@ class Handler {
                         ids.push(r.identifier);
                     });
                     app.setSessionAttribute('manyRoutes', ids);
+                    app.setSessionAttribute('startNumber',readResults);
                     app.followUpState('ManyResults');
                     let text = '';
                     let i = 1;
@@ -281,7 +279,7 @@ class Handler {
             DurationSearchIntentEqual(duration) {
                 const result = searchDurationRoute(duration, lang, 'equal');
                 if (result.length === 0) {
-                    app.ask(strings.dif_search_dur_not_found[lang].replace('$hours', hours).replace('$minutes', minutes));
+                    app.ask(strings.dif_search_dur_not_found[lang].replace('$duration', duration));
                 } else if (result.length === 1) {
                     app.setSessionAttribute('annId', result[0].identifier);
                     app.followUpState('SelectedHiking');
@@ -292,6 +290,7 @@ class Handler {
                         ids.push(r.identifier);
                     });
                     app.setSessionAttribute('manyRoutes', ids);
+                    app.setSessionAttribute('startNumber',readResults);
                     app.followUpState('ManyResults');
                     let text = '';
                     let i = 1;
@@ -318,6 +317,7 @@ class Handler {
                         ids.push(r.identifier);
                     });
                     app.setSessionAttribute('manyRoutes', ids);
+                    app.setSessionAttribute('startNumber',readResults);
                     app.followUpState('ManyResults');
                     let text = '';
                     let i = 1;
@@ -383,13 +383,14 @@ class Handler {
                                 }
                             }
                         });
-                        const names = matchingPlaces.slice(0, readResults).map(ann => ann.name).join(', ');
-                        app.setSessionAttribute('manyRoutesId', matchingPlaces.slice(0, readResults).map(ann => ann.identifier));
+                        const names = matchingPlaces.slice(0, (readResults-1)).map(ann => ann.name).join(', ');
+                        app.setSessionAttribute('manyRoutes', matchingPlaces.map(ann => ann.identifier));
+                        app.setSessionAttribute('startNumber',readResults);
                         app.followUpState('ManyResults');
                         app.ask(strings.found_diff[lang]
                             .replace('$num', matchingPlaces.length)
                             .replace('$difficulty', getFeature(matchingPlaces[0], 'difficulty'))
-                            .replace('$i', readResults.toString())
+                            .replace('$i', (readResults-1).toString())
                             .replace('$names', names));
                     } else {
                         app.ask(strings.unknown_diff[lang]);
@@ -408,7 +409,7 @@ class Handler {
                 NameIntent(routeName) {
                     if (routeName) {
                         const ann = [];
-                        app.getSessionAttribute('manyRoutesId').forEach((id) => {
+                        app.getSessionAttribute('manyRoutes').forEach((id) => {
                             ann.push(annotations[lang][id]);
                         });
                         const fuse = new Fuse(ann.map(a => a.name), fuseOptions);
@@ -423,6 +424,27 @@ class Handler {
                     } else {
                         app.ask(strings.no_name[lang]);
                     }
+                },
+
+
+                MoreIntent() {
+                    console.log('more');
+                    let text='';
+                   if(app.getSessionAttribute('startNumber')){
+                       let start=app.getSessionAttribute('startNumber');
+                       app.setSessionAttribute('startNumber',start+readResults-1);
+                       let i=0;
+                       while(i<readResults-1){
+                            let num=start+i;
+                            text=text+ ', '+num+'. '+annotations[lang][app.getSessionAttribute('manyRoutes')[num - 1]].name,
+                            i++;
+                            //console.log(num+ "  "+ text+annotations[lang][app.getSessionAttribute('manyRoutes')[num - 1]].name);
+                       }
+                   }else{
+                       app.setSessionAttribute('startNumber',readResults);
+                       app.toIntent('MoreIntent');
+                   }
+                   app.ask(text);
                 },
             },
             SelectedHiking: {
@@ -482,6 +504,7 @@ class Handler {
                     }
 
                     console.log(content);
+
                     if (hasProp(ann, 'image')) {
                         let imageUrl;
                         if (ann.image.length === undefined) {
@@ -510,7 +533,7 @@ class Handler {
                 },
                 TimeIntent() {
                     const ann = annotations[lang][app.getSessionAttribute('annId')];
-                    const value = getFeature(ann, 'time_total').toString();
+                    const value = getFeature(ann, 'time_total').toFixed(1).toString();
                     if (value) {
                         app.ask(strings.time[lang].replace('$time', value.replace('.', ',')));
                     } else {

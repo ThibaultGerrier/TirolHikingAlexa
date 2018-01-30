@@ -1,0 +1,23 @@
+Alexa, Wandern in Tirol.
+
+Suche Friedenswanderweg (Hocheggalm .. ) //Wurde gefunden
+    Wie lange ist Die Route?
+    Wie lange dauert diese Route?
+    Hat diese Route eine Telefonnummer?
+    Wie schwer ist diese Route?
+    Sende an mein Handy.
+    //Hast du ein Bild?
+
+Gib mir eine Wanderung die kürzer als 2 Stunden lang geht.
+    Weiter //(Mehr)
+    Wanderung Bienenlehrpfad //(Nummer 4)
+
+Gib mir eine Zufällige Wanderroute
+
+Ich suche eine leichte Wanderung.
+    Weiter
+    Nummer 4.
+
+Ich suche eine Wanderug in der Nähe von Seefeld.
+    Wie schwer ist diese Route?
+    Sende an mein Handy.
