@@ -15,7 +15,7 @@ webhook.listen(8008, () => {
 const handlerDE = new Handler('de');
 const handlerEN = new Handler('en');
 
-webhook.post('/webhook', (req, res) => {
+webhook.post('/api/hiking', (req, res) => {
     switch (req.body.request.locale) {
     case 'de-DE':
         app.handleRequest(req, res, handlerDE.handler);
@@ -29,7 +29,7 @@ webhook.post('/webhook', (req, res) => {
     app.execute();
 });
 
-webhook.get('/image/', (req, res) => {
+webhook.get('/api/hiking/image/', (req, res) => {
     fs.readFile(`../images/${req.query.image}`, (err, content) => {
         if (err) {
             res.writeHead(400, { 'Content-type': 'text/html' });

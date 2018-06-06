@@ -3,7 +3,7 @@ const Fetcher = require('./fetcher');
 const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://broker-mongodb:27017';
 const dbName = 'hikingAlexa';
 
 const getAnn = (cb) => {

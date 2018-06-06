@@ -9,7 +9,7 @@ const keys = require('../misc/keys');
 const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://broker-mongodb:27017';
 const dbName = 'hikingAlexa';
 
 const ngrok = 'http://c2b588bf.ngrok.io/image/?image='; // TODO Update server url
